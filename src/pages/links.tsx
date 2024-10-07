@@ -9,7 +9,7 @@ export function Links() {
     { src: 'xtwitter', social: 'X (Twitter)', user: '@pedrolucaofc', url: 'https://twitter.com/pedrolucaofc' },
     { src: 'youtube', social: 'YouTube', user: 'Pedro Luca Prates', url: 'https://youtube.com/channel/UC7qDaMEUS4MjhQ7UVxQQVMQ' },
     { src: 'twitch', social: 'Twitch', user: 'PedroLucaOFC', url: 'https://twitch.tv/PedroLucaOFC' },
-    { src: 'outlook', social: 'Outlook', user: 'pedrolucaofc@outlook.com', url: 'mailto:pedrolucaofc@outlook.com' },
+    { src: 'outlook', social: 'Outlook', user: 'pedrolucaofc@outlook', url: 'mailto:pedrolucaofc@outlook.com' },
   ]
 
   return (

@@ -4,6 +4,7 @@ import { Home } from "./pages/home"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Setup } from "./pages/setup"
 import { Links } from "./pages/links"
+import { NotFound } from "./pages/not-found"
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/setup" element={<Setup />} />
         <Route path="/links" element={<Links />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
