@@ -1,27 +1,49 @@
 import { PanelRight, X } from 'lucide-react'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { twMerge } from 'tailwind-merge'
 import NewLogo from '../../assets/images/logo.svg'
 import { MyNavLink } from './my-navlink'
+import React, { useEffect } from 'react'
 
-export function Header() {
-  const [isMenuActive, setIsMenuActive] = useState(false)
+export function Header () {
+  const [isMenuActive, setIsMenuActive] = React.useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMenuActive) {
+        setIsMenuActive(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [isMenuActive])
 
   const handleMenu = () => {
     setIsMenuActive(!isMenuActive)
   }
 
-  const navbar = document.getElementById('navbar')
-
-  navbar?.addEventListener('click', (e) => {
-    if (e.target === navbar) {
-      setIsMenuActive(false)
+  const handleNavLinkClick = (targetId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/')
+      setTimeout(() => {
+        document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
     }
-  })
+  }
 
   return (
-    <header className='flex px-3 py-1 w-full h-16 items-center justify-between bg-transparent border-b border-white/20'>
+    <header className='flex px-3 py-1 w-full h-16 items-center fixed justify-between backdrop-blur-md border-b border-white/20 z-10'>
       <NavLink to="/">
         <img src={NewLogo} className='size-10' />
       </NavLink>
@@ -31,8 +53,8 @@ export function Header() {
         </button>
         <nav id='navbar' className={
           twMerge(
-            isMenuActive ? 'flex' : 'hidden',
-            'absolute lg:relative h-[100vh] lg:h-auto w-[100vw] lg:w-auto top-0 left-0 bg-black/80 lg:bg-transparent flex-row-reverse lg:flex-row transition lg:flex'
+            isMenuActive ? '-translate-x-0' : 'translate-x-full',
+            'absolute flex lg:relative h-screen lg:h-auto w-screen lg:w-auto top-0 right-0 bg-black/80 lg:bg-transparent flex-row-reverse lg:flex-row transition-transform duration-400 lg:-translate-x-0'
           )
         }>
           <div className='py-4 px-5 bg-zinc-950 w-72 flex flex-col border-l lg:border-0 border-white/20 lg:flex-row lg:items-center lg:w-auto lg:p-0 lg:bg-transparent'>
@@ -43,10 +65,14 @@ export function Header() {
             <hr className='border-white/20 lg:hidden' />
             <ul className='flex flex-col gap-2 px-1 mt-4 text-lg lg:flex-row lg:items-center lg:mt-0'>
               <li>
-                <MyNavLink to="/about">Sobre</MyNavLink>
+                <button onClick={() => handleNavLinkClick('about-section')} className='text-zinc-400 font-semibold hover:text-white lg:hover:bg-white/20 transition px-2 py-1 lg:hover:rounded-md w-full text-left'>
+                  Sobre
+                </button>
               </li>
               <li>
-                <MyNavLink to="/projects">Projetos</MyNavLink>
+                <button onClick={() => handleNavLinkClick('projects-section')} className='text-zinc-400 font-semibold hover:text-white lg:hover:bg-white/20 transition px-2 py-1 lg:hover:rounded-md w-full text-left'>
+                  Projetos
+                </button>
               </li>
               <li>
                 <MyNavLink to="/setup">Setup</MyNavLink>
