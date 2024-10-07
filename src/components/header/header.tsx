@@ -14,26 +14,14 @@ export function Header () {
     window.scrollTo(0, 0)
   }, [location.pathname])
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (isMenuActive) {
-        setIsMenuActive(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [isMenuActive])
-
   const handleMenu = () => {
     setIsMenuActive(!isMenuActive)
   }
 
-  const handleNavLinkClick = (targetId: string) => {
-    if (location.pathname !== '/') {
-      navigate('/')
+  const handleNavLinkClick = (targetId: string, path: string = '/') => {
+    setIsMenuActive(false)
+    if (location.pathname !== path) {
+      navigate(path)
       setTimeout(() => {
         document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
       }, 100)
@@ -75,10 +63,18 @@ export function Header () {
                 </button>
               </li>
               <li>
-                <MyNavLink to="/setup">Setup</MyNavLink>
+                <button onClick={() => handleNavLinkClick('setup-section', '/setup')} className='w-full'>
+                  <MyNavLink to='/setup'>
+                    Setup
+                  </MyNavLink>
+                </button>
               </li>
               <li>
-                <MyNavLink to="/links">Links</MyNavLink>
+                <button onClick={() => handleNavLinkClick('links-section', '/links')} className='w-full'>
+                  <MyNavLink to='/links'>
+                    Links
+                  </MyNavLink>
+                </button>
               </li>
             </ul>
           </div>
