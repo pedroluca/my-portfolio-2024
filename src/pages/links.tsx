@@ -13,7 +13,10 @@ export function Links() {
   ]
 
   return (
-    <section className="py-4 px-6 lg:px-64 w-full flex flex-col gap-3 text-justify pt-24 mb-16">
+    <section 
+      className="py-4 px-6 lg:px-64 w-full flex flex-col gap-3 text-justify pt-24 mb-16 min-h-screen"
+      style={{ minHeight: 'calc(100vh - 4rem - 4rem)' }}
+    >
       <PageTitle>Links</PageTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {links.map(link => (
