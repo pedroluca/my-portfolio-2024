@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Setup } from "./pages/setup"
 import { Links } from "./pages/links"
 import { NotFound } from "./pages/not-found"
+import { Analytics } from "@vercel/analytics/react"
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <Analytics/>
     </BrowserRouter>
   )
 }
