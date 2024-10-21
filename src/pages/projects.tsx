@@ -12,6 +12,11 @@ export function Projects() {
           url="https://www.olimpiadasdosertaoprodutivo.com/"
         />
         <ProjectCard
+          title="Gerenciador de faturas" 
+          description="Um simples site para gerenciamento de fatores e compras no cartão de crédito." 
+          url="https://billing-manager.vercel.app/" 
+        />
+        <ProjectCard
           title="Blog Criança Alerta" 
           description="Blog educativo com o intuito de ensinar para as crianças e adolescentes sobre seus direitos." 
           url="https://www.blogcriancaalerta.epizy.com/" 
