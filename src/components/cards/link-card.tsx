@@ -5,6 +5,7 @@ import Xtwitter from '../../assets/images/xtwitter.png'
 import Youtube from '../../assets/images/youtube.png'
 import Twitch from '../../assets/images/twitch.png'
 import Outlook from '../../assets/images/outlook.png'
+import Duolingo from '../../assets/images/duolingo.png'
 
 interface LinkCardProps {
   src: string
@@ -24,6 +25,7 @@ export function LinkCard(props: LinkCardProps) {
   else if (props.src === 'youtube') imagePath = Youtube
   else if (props.src === 'twitch') imagePath = Twitch
   else if (props.src === 'outlook') imagePath = Outlook
+  else if (props.src === 'duolingo') imagePath = Duolingo
 
   return (
     <div 
