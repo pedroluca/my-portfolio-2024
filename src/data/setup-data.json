@@ -1,0 +1,39 @@
+
+{
+  "workstation": [
+    { "src": "laptop", "itemType": "Laptop", "itemName": "Samsung Galaxy Book3 360 13.3'", "url": "https://www.amazon.com.br/dp/B0C5RY1WG9?psc=1&ref=ppx_yo2ov_dt_b_product_details" },
+    { "src": "headset", "itemType": "Headset", "itemName": "Razer Kraken Lite", "url": "https://www.amazon.com.br/gp/product/B07XC936P8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" },
+    { "src": "headphone", "itemType": "Headphone", "itemName": "Philips UH202 BT", "url": "https://www.amazon.com.br/gp/product/B07YNG2L67/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1" },
+    { "src": "earphone1", "itemType": "Earpods principal", "itemName": "QCY HT05", "url": "https://pt.aliexpress.com/item/1005004786288333.html?spm=a2g0o.order_list.order_list_main.73.13fbcaa4fnapqA&gatewayAdapt=glo2bra" },
+    { "src": "earphone2", "itemType": "Earpods", "itemName": "Baseus Encok W04", "url": "https://www.amazon.com.br/gp/product/B01LYIY2HG/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1" },
+    { "src": "mouse1", "itemType": "Mouse principal", "itemName": "Baseus F01B Wireless", "url": "https://pt.aliexpress.com/item/1005005847298347.html?spm=a2g0o.order_list.order_list_main.6.649ecaa4iWc5Ig&gatewayAdapt=glo2bra" },
+    { "src": "mousepad", "itemType": "Mousepad", "itemName": "Fortrek G Speed Medium", "url": "https://www.amazon.com.br/gp/product/B0765YY6TM/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1" },
+    { "src": "smartphone", "itemType": "Smartphone", "itemName": "Redmi Note 11 Pro", "url": "https://www.mi.com/br/product/redmi-note-11-pro/" },
+    { "src": "smartwatch", "itemType": "Smartwatch", "itemName": "Infinix Watch S3", "url": "https://www.mercadolivre.com.br/smartwatch-infinix-s3-full-touch-169-polegadas-preto/p/MLB26769125" },
+    { "src": "alexa", "itemType": "Assistente", "itemName": "Alexa Echo Dot 4ª gen c/ relógio", "url": "https://www.amazon.com.br/Echo-Dot-com-Rel%C3%B3gio-Cor-Branca/dp/B084J4WP6J" },
+    { "src": "hub", "itemType": "Hub", "itemName": "Hub 1x USB-C p/ 4x USB-A", "url": "https://pt.aliexpress.com/item/1005005445851704.html?spm=a2g0o.order_list.order_list_main.30.21efcaa40xX5Os&gatewayAdapt=glo2bra" },
+    { "src": "suporte", "itemType": "Suporte p/ Laptop", "url": "https://pt.aliexpress.com/item/1005005217800671.html?spm=a2g0o.order_list.order_list_main.4.76eecaa4wvymvg&gatewayAdapt=glo2bra" },
+    { "src": "suportecabos", "itemType": "Suporte p/ 7 cabos", "url": "https://pt.aliexpress.com/item/1005005446446422.html?spm=a2g0o.order_list.order_list_main.15.21efcaa40xX5Os&gatewayAdapt=glo2bra" }
+  ],
+  "coding": [
+    { "src": "vscode", "itemType": "IDE", "itemName": "VS Code", "url": "https://code.visualstudio.com/" },
+    { "src": "vesperpptheme", "itemType": "Tema", "itemName": "Vesper++", "url": "https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp" },
+    { "src": "jetbrains", "itemType": "Fonte", "itemName": "JetBrains Mono", "url": "https://www.jetbrains.com/pt-br/lp/mono/" },
+    { "src": "gitbash", "itemType": "Terminal", "itemName": "Git Bash for Windows", "url": "https://git-scm.com/" },
+    { "src": "ohmyzsh", "itemType": "Customização de terminal", "itemName": "Oh-my-zsh!", "url": "https://ohmyz.sh/" }
+  ],
+  "books": [
+    { "src": "codigo", "itemType": "Código Limpo", "url": "https://www.amazon.com.br/gp/product/8576082675/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" },
+    { "src": "arquitetura", "itemType": "Arquitetura Limpa", "url": "https://www.amazon.com.br/gp/product/8550804606/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" },
+    { "src": "php4", "itemType": "PHP4 e MySQL", "url": "/setup" },
+    { "src": "estrutura", "itemType": "Estrutura de Dados", "url": "/setup" },
+    { "src": "android", "itemType": "Aplicativos para o Android", "url": "/setup" }
+  ],
+  "newsletter": [
+    { "src": "deschamps", "itemType": "Filipe Deschamps", "url": "https://filipedeschamps.com.br/newsletter" },
+    { "src": "thenews", "itemType": "The News", "url": "https://thenewscc.beehiiv.com/subscribe?ref=huLORfHEBz" },
+    { "src": "codecon", "itemType": "Codecon", "url": "https://codecon.substack.com" },
+    { "src": "biro", "itemType": "Birobirobiro", "url": "https://birobirobiro.substack.com" },
+    { "src": "designdev", "itemType": "Design Dev", "url": "https://design.dev/" }
+  ]
+}
