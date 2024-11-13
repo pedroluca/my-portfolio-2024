@@ -29,12 +29,13 @@ import Alexa from '../../assets/images/setup-images/alexa.png'
 import Hub from '../../assets/images/setup-images/hub-usbc.png'
 import SuporteCabos from '../../assets/images/setup-images/suporte-mesa.png'
 
+type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earphone1' | 'earphone2' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos'
+
 interface SetupCardProps {
-  src: string
+  src: ImageMapKeys
   itemType: string
   itemName?: string
   url: string
-  key: number
 }
 
 const imageMap: Record<string, string> = {
