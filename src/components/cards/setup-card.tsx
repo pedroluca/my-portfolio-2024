@@ -29,16 +29,15 @@ import Alexa from '../../assets/images/setup-images/alexa.png'
 import Hub from '../../assets/images/setup-images/hub-usbc.png'
 import SuporteCabos from '../../assets/images/setup-images/suporte-mesa.png'
 
-type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earphone1' | 'earphone2' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos'
-
 interface SetupCardProps {
-  src: ImageMapKeys
+  src: string
   itemType: string
   itemName?: string
   url: string
+  key: number
 }
 
-const imageMap: Record<ImageMapKeys, string> = {
+const imageMap: Record<string, string> = {
   laptop: Laptop,
   mouse1: Mouse1,
   mouse2: Mouse2,
@@ -77,11 +76,23 @@ export function SetupCard(props: SetupCardProps) {
   const imagePath = imageMap[props.src]
 
   return (
-    <div className="setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105" onClick={handleCardClick}>
-      <img className="img-contain p-1 w-full h-36 object-contain cursor-pointer" src={imagePath} alt={`${props.itemType} image`} />
-      <div className="p-0.5">
-        <h4 className="text-lg font-semibold mb-2 text-left">{props.itemType}</h4>
-        <p className="text-sm text-gray-400">{props.itemName}</p>
+    <div className='setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105' onClick={handleCardClick}>
+      <img className='img-contain p-1 w-full h-36 object-contain cursor-pointer' src={imagePath} alt={`${props.itemType} image`} />
+      <div className='p-0.5'>
+        <h4 className='text-lg font-semibold mb-2 text-left'>{props.itemType}</h4>
+        <p className='text-sm text-gray-400'>{props.itemName}</p>
+      </div>
+    </div>
+  )
+}
+
+export function SetupCardSkeleton() {
+  return (
+    <div className='setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transform transition-transform animate-pulse'>
+      <div className='img-contain p-1 w-full h-36 bg-gray-600 rounded mb-2'></div>
+      <div className='p-0.5'>
+        <div className='h-4 bg-gray-500 rounded w-1/2 mb-4'></div>
+        <div className='h-3 bg-gray-500 rounded w-3/4'></div>
       </div>
     </div>
   )
