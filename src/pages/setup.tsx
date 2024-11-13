@@ -22,7 +22,7 @@ export function Setup() {
   const [data, setData] = useState<SetupData | null>(null)
 
   useEffect(() => {
-    fetch('/src/data/setup-data.json')
+    fetch('./src/data/setup-data.json')
       .then(response => response.json())
       .then(data => {
         setData(data)
