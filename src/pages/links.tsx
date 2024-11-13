@@ -1,7 +1,12 @@
 import { PageTitle } from "../components/page-title/page-title"
-import { LinkCard } from "../components/cards/link-card"
+import { LinkCard, LinkCardSkeleton } from "../components/cards/link-card"
+import { useState } from "react"
 
 export function Links() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  setTimeout(() => setIsLoading(false), 500)
+  
   const links = [
     { src: 'instagram', social: 'Instagram', user: '@pedroluca.p', url: 'https://instagram.com/pedroluca.p' },
     { src: 'github', social: 'Github', user: '@pedroluca', url: 'https://github.com/pedroluca' },
@@ -20,9 +25,17 @@ export function Links() {
     >
       <PageTitle>Links</PageTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {links.map(link => (
-          <LinkCard key={link.src} src={link.src} social={link.social} user={link.user} url={link.url} />
-        ))}
+        {isLoading ? (
+          <>
+            <LinkCardSkeleton />
+            <LinkCardSkeleton />
+            <LinkCardSkeleton />
+          </>
+        ) : (
+          links.map(link => (
+            <LinkCard key={link.src} src={link.src} social={link.social} user={link.user} url={link.url} />
+          ))
+        )}
       </div>
     </section>
   )
