@@ -85,6 +85,7 @@ export function Setup() {
                 <SetupCard src="php4" itemType="PHP4 e MySQL" url="/setup" />
                 <SetupCard src="estrutura" itemType="Estrutura de Dados" url="/setup" />
                 <SetupCard src="android" itemType="Aplicativos para o Android" url="/setup" />
+                <SetupCard src="lotrBox" itemType='Box - O Senhor dos Anéis' url='https://www.amazon.com.br/dp/8595086354?ref=ppx_yo2ov_dt_b_fed_asin_title' />
               </>
             )}
           </div>
