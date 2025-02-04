@@ -33,8 +33,7 @@ export function Setup() {
                 <SetupCard src="laptop" itemType="Laptop" itemName="Samsung Galaxy Book3 360 13.3'" url="https://www.amazon.com.br/dp/B0C5RY1WG9?psc=1&ref=ppx_yo2ov_dt_b_product_details" />
                 <SetupCard src="headset" itemType="Headset" itemName="Razer Kraken Lite" url="https://www.amazon.com.br/gp/product/B07XC936P8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" />
                 <SetupCard src="headphone" itemType="Headphone" itemName="Philips UH202 BT" url="https://www.amazon.com.br/gp/product/B07YNG2L67/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1" />
-                <SetupCard src="earphone1" itemType="Earpods principal" itemName="QCY HT05" url="https://pt.aliexpress.com/item/1005004786288333.html?spm=a2g0o.order_list.order_list_main.73.13fbcaa4fnapqA&gatewayAdapt=glo2bra" />
-                <SetupCard src="earphone2" itemType="Earpods" itemName="Baseus Encok W04" url="https://www.amazon.com.br/gp/product/B01LYIY2HG/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1" />
+                <SetupCard src="earpods" itemType="Earpods" itemName="QCY HT08 / Melobuds Pro" url="https://www.amazon.com.br/dp/B0D4QRHDZ9?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1" />
                 <SetupCard src="mouse1" itemType="Mouse principal" itemName="Baseus F01B Wireless" url="https://pt.aliexpress.com/item/1005005847298347.html?spm=a2g0o.order_list.order_list_main.6.649ecaa4iWc5Ig&gatewayAdapt=glo2bra" />
                 <SetupCard src="mousepad" itemType="Mousepad" itemName="Fortrek G Speed Medium" url="https://www.amazon.com.br/gp/product/B0765YY6TM/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1" />
                 <SetupCard src="smartphone" itemType="Smartphone" itemName="Redmi Note 11 Pro" url="https://www.mi.com/br/product/redmi-note-11-pro/" />

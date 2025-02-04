@@ -5,8 +5,7 @@ import VSCode from '@/images/setup-images/vscode.png'
 import Laptop from '@/images/setup-images/laptop.png'
 import Headset from '@/images/setup-images/headset.png'
 import Headphone from '@/images/setup-images/headphone.png'
-import Earpods1 from '@/images/setup-images/earphone1.png'
-import Earpods2 from '@/images/setup-images/earphone2.png'
+import Earpods from '@/images/setup-images/earpods.png'
 import Mouse1 from '@/images/setup-images/mouse1.png'
 import Mouse2 from '@/images/setup-images/mouse2.png'
 import Mousepad from '@/images/setup-images/mousepad.png'
@@ -30,7 +29,7 @@ import Hub from '@/images/setup-images/hub-usbc.png'
 import SuporteCabos from '@/images/setup-images/suporte-mesa.png'
 import LotrBox from '@/images/setup-images/lotr-box.jpg'
 
-type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earphone1' | 'earphone2' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox'
+type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox'
 
 interface SetupCardProps {
   src: ImageMapKeys
@@ -43,8 +42,7 @@ const imageMap: Record<string, string> = {
   laptop: Laptop,
   mouse1: Mouse1,
   mouse2: Mouse2,
-  earphone1: Earpods1,
-  earphone2: Earpods2,
+  earpods: Earpods,
   headphone: Headphone,
   headset: Headset,
   mousepad: Mousepad,
