@@ -81,7 +81,7 @@ export function SetupCard(props: SetupCardProps) {
       <img className='img-contain p-1 w-full h-36 object-contain' src={imagePath} alt={`${props.itemType} image`} />
       <div className='p-0.5'>
         <h4 className='text-lg font-semibold mb-2 text-left'>{props.itemType}</h4>
-        <p className='text-sm text-gray-400'>{props.itemName}</p>
+        <p className='text-sm text-left text-gray-400'>{props.itemName}</p>
       </div>
     </div>
   )
