@@ -15,7 +15,7 @@ export function About() {
         <p>Meu nome é Pedro Luca Prates, tenho {myAge} anos e sou Técnico em Informática e Desenvolvedor Web Fullstack.</p>
         <br/>
         <p>Em 2021, conclui a minha formação como Técnico em Informática para Internet no IF Baiano - <em>Campus</em> Guanambi, mesma instituição onde atualmente estou cursando Análise e Desenvolvimento de Sistemas. Sou apaixonado pelo mundo da programação desde que iniciei meus estudos na área, em 2018, e tenho muita afinidade com Front-End, apesar de também gostar e compreender facilmente as complexidades do Back-End (Já desenvolvi alguns projetos como Dev Full-Stack).</p>
-        <br/>
+        <br />
         <p>Tenho experiência com as tecnologias: HTML, CSS, JavaScript, TypeScript, PHP, Laravel, Python, Django, SQL, Java, C e atualmente estou estudando React.JS.</p>
       </section>
       <section className='flex flex-col gap-3'>
