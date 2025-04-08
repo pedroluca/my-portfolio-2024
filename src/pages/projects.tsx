@@ -7,6 +7,11 @@ export function Projects() {
       <PageTitle>Projetos</PageTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
+          title="TrainLog"
+          description="Site para acompanhamento de treinos e exercícios, com temporizador de intervalor incluso e compartilhamento de treinos." 
+          url="https://trainlogapp.vercel.app/"
+        />
+        <ProjectCard
           title="Site para I Olimpíadas Científicas do Território Sertão Produtivo"
           description="Site para divulgação de datas, inscrições, e contato dos participantes das I Olimpíadas Científicas do Território Sertão Produtivo." 
           url="https://www.olimpiadasdosertaoprodutivo.com/"
