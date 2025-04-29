@@ -28,8 +28,13 @@ import Alexa from '@/images/setup-images/alexa.png'
 import Hub from '@/images/setup-images/hub-usbc.png'
 import SuporteCabos from '@/images/setup-images/suporte-mesa.png'
 import LotrBox from '@/images/setup-images/lotr-box.jpg'
+import Hyper from '@/images/setup-images/hyper.png'
+import Monitor from '@/images/setup-images/monitor.png'
+import Solasterion from '@/images/setup-images/solasterion.png'
+import Moleskine from '@/images/setup-images/moleskine.png'
+import Abajur from '@/images/setup-images/abajur.png'
 
-type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox'
+type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'solasterion' | 'moleskine' | 'abajur'
 
 interface SetupCardProps {
   src: ImageMapKeys
@@ -68,7 +73,12 @@ const imageMap: Record<string, string> = {
   alexa: Alexa,
   hub: Hub,
   suportecabos: SuporteCabos,
-  lotrBox: LotrBox
+  lotrBox: LotrBox,
+  hyper: Hyper,
+  solasterion: Solasterion,
+  monitor: Monitor,
+  moleskine: Moleskine,
+  abajur: Abajur,
 }
 
 export function SetupCard(props: SetupCardProps) {
