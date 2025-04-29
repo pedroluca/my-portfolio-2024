@@ -17,27 +17,19 @@ export function Projects() {
           url="https://www.olimpiadasdosertaoprodutivo.com/"
         />
         <ProjectCard
-          title="Gerenciador de faturas" 
-          description="Um simples site para gerenciamento de fatores e compras no cartão de crédito." 
-          url="https://billing-manager.vercel.app/" 
-        />
-        <ProjectCard
           title="Blog Criança Alerta" 
           description="Blog educativo com o intuito de ensinar para as crianças e adolescentes sobre seus direitos." 
           url="https://www.blogcriancaalerta.epizy.com/" 
         />
         <ProjectCard
-          title="Catálogo de Serviços" 
-          description="Plataforma online para divulgação de empresas e pequenos comércios na região." 
+          title="Gerenciador de faturas" 
+          description="Um simples site para gerenciamento de fatores e compras no cartão de crédito." 
+          url="https://billing-manager.vercel.app/" 
         />
         <ProjectCard
           title="Repaginação do site do IF Baiano campus Guanambi" 
           description="Atividade acadêmica cujo intuito era desenvolver ou repaginar um site" 
           url="https://repage-if-baiano.vercel.app/" 
-        />
-        <ProjectCard
-          title="Small Phones" 
-          description="Sistema de solicitação de atendimentos técnicos. O cliente se cadastra e entra em contato com um técnico." 
         />
       </div>
       <p className="mt-6 text-center text-gray-400">
