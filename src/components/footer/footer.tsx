@@ -8,7 +8,7 @@ import TwitterIcon from '../../assets/images/x-color.svg'
 export function Footer() {
   return (
     <footer className='h-16 px-3 py-1 flex items-center justify-center gap-3 bg-neutral-950 border-t border-white/20'>
-      <FooterButton href='https://linkedin.com/in/pedro-luca-prates' src={LinkedinIcon} />
+      <FooterButton href='https://linkedin.com/in/pedrolucaofc' src={LinkedinIcon} />
       <FooterButton href='https://github.com/pedroluca' src={GithubIcon} />
       <FooterButton href='https://instagram.com/pedroluca.p' src={InstagramIcon} />
       <FooterButton href='https://youtube.com/channel/@pedrolucaofc' src={YoutubeIcon} />

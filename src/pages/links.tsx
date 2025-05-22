@@ -12,7 +12,7 @@ export function Links() {
     { src: 'github', social: 'Github', user: '@pedroluca', url: 'https://github.com/pedroluca' },
     { src: 'linkedin', social: 'LinkedIn', user: 'Pedro Luca Prates', url: 'https://linkedin.com/in/pedrolucaofc' },
     { src: 'xtwitter', social: 'X (Twitter)', user: '@pedrolucaofc', url: 'https://twitter.com/pedrolucaofc' },
-    { src: 'youtube', social: 'YouTube', user: 'Pedro Luca Prates', url: 'https://youtube.com/channel/UC7qDaMEUS4MjhQ7UVxQQVMQ' },
+    { src: 'youtube', social: 'YouTube', user: 'Pedro Luca Prates', url: 'https://youtube.com/channel/@pedrolucaofc' },
     { src: 'twitch', social: 'Twitch', user: 'PedroLucaOFC', url: 'https://twitch.tv/PedroLucaOFC' },
     { src: 'duolingo', social: 'Duolingo', user: 'pedroluca.p', url: 'https://www.duolingo.com/profile/pedroluca.p' },
     { src: 'outlook', social: 'Outlook', user: 'pedrolucaofc@outlook', url: 'mailto:pedrolucaofc@outlook.com' },
