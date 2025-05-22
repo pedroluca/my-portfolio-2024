@@ -8,7 +8,7 @@ export function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
           title="TrainLog"
-          description="Site para acompanhamento de treinos e exercícios, com temporizador de intervalor incluso e compartilhamento de treinos." 
+          description="Site para acompanhamento de treinos e exercícios, com temporizador de intervalos incluso e compartilhamento de treinos." 
           url="https://trainlogapp.vercel.app/"
         />
         <ProjectCard

@@ -33,8 +33,9 @@ import Monitor from '@/images/setup-images/monitor.png'
 import Solasterion from '@/images/setup-images/solasterion.png'
 import Moleskine from '@/images/setup-images/moleskine.png'
 import Abajur from '@/images/setup-images/abajur.png'
+import Pinho from '@/images/setup-images/pinho.webp'
 
-type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'solasterion' | 'moleskine' | 'abajur'
+type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'solasterion' | 'moleskine' | 'abajur' | 'pinho'
 
 interface SetupCardProps {
   src: ImageMapKeys
@@ -79,6 +80,7 @@ const imageMap: Record<string, string> = {
   monitor: Monitor,
   moleskine: Moleskine,
   abajur: Abajur,
+  pinho: Pinho,
 }
 
 export function SetupCard(props: SetupCardProps) {

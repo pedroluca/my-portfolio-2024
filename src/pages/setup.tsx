@@ -105,11 +105,12 @@ export function Setup() {
               </>
             ) : (
               <>
+                <SetupCard src="pinho" itemType="Pinho" url="https://pinhoco.substack.com/about" />
                 <SetupCard src="deschamps" itemType="Filipe Deschamps" url="https://filipedeschamps.com.br/newsletter" />
-                <SetupCard src="thenews" itemType="The News" url="https://thenewscc.beehiiv.com/subscribe?ref=huLORfHEBz" />
                 <SetupCard src="codecon" itemType="Codecon" url="https://codecon.substack.com" />
-                <SetupCard src="biro" itemType="Birobirobiro" url="https://birobirobiro.substack.com" />
                 <SetupCard src="designdev" itemType="Design Dev" url="https://design.dev/" />
+                <SetupCard src="biro" itemType="Birobirobiro" url="https://birobirobiro.substack.com" />
+                <SetupCard src="thenews" itemType="The News" url="https://thenewscc.beehiiv.com/subscribe?ref=huLORfHEBz" />
               </>
             )}
           </div>
