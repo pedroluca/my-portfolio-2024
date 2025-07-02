@@ -89,7 +89,22 @@ export function SetupCard(props: SetupCardProps) {
   const imagePath = imageMap[props.src]
 
   return (
-    <div className='setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:cursor-pointer' onClick={handleCardClick}>
+    <div 
+      className='setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in-out cursor-pointer' 
+      style={{ 
+        boxShadow: '0 1px 4px rgba(255, 255, 255, 0.3)',
+        transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.boxShadow = '0 0 8px rgba(255, 255, 255, 0.4), 0 0 16px rgba(255, 255, 255, 0.2)'
+        e.currentTarget.style.transform = 'scale(1.05)'
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.boxShadow = '0 1px 4px rgba(255, 255, 255, 0.3)'
+        e.currentTarget.style.transform = 'scale(1)'
+      }}
+      onClick={handleCardClick}
+    >
       <img className='img-contain p-1 w-full h-36 object-contain' src={imagePath} alt={`${props.itemType} image`} />
       <div className='p-0.5'>
         <h4 className='text-lg font-semibold mb-2 text-left'>{props.itemType}</h4>
