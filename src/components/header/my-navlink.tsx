@@ -13,9 +13,9 @@ export function MyNavLink(props: MyNavLinkProps) {
       className={({ isActive }) =>
         twMerge(
           isActive
-            ? 'text-white border-b'
+            ? 'text-white'
             : 'text-zinc-400',
-          'font-semibold flex hover:text-white lg:hover:bg-white/20 transition px-2 py-1 lg:hover:rounded-md text-left w-full'
+          'font-semibold flex lg:hover:bg-white/20 transition px-2 py-1 lg:rounded-md text-left w-full'
         )
       }
       to={props.to}
