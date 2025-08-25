@@ -1,9 +1,10 @@
-import { PageTitle } from "../components/page-title/page-title";
-import { ProjectCard } from "../components/cards/project-card";
+import { PageTitle } from "../components/page-title/page-title"
+import { ProjectCard } from "../components/cards/project-card"
+import { MoveRight } from "lucide-react"
 
 export function Projects() {
   return (
-    <section className="py-4 px-6 lg:px-64 w-full flex flex-col gap-3 text-justify pt-24 mb-16" id="projects-section">
+    <section className="py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24 mb-16" id="projects-section">
       <PageTitle>Projetos</PageTitle>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
@@ -32,11 +33,9 @@ export function Projects() {
           url="https://repage-if-baiano.vercel.app/" 
         />
       </div>
-      <p className="mt-6 text-center text-gray-400">
-        Veja mais projetos no meu perfil do GitHub: 
-        <a href="https://github.com/pedroluca" target="_blank" rel="noopener noreferrer" className="text-white hover:underline ml-2">
-          @pedroluca
-        </a>
+      <p className="mt-6 text-gray-400 flex gap-2 items-center hover:cursor-pointer hover:text-white transition-colors" onClick={() => window.open("https://github.com/pedroluca", "_blank")}>
+        Veja mais projetos
+        <MoveRight />
       </p>
     </section>
   )

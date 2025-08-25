@@ -8,7 +8,7 @@ export function About() {
   const myAge: number = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 365.25))
 
   return (
-    <main className='py-4 px-6 lg:px-64 w-full flex flex-col gap-3 text-justify pt-24' id='about-section'>
+    <main className='py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24' id='about-section'>
       <PageTitle>Sobre mim</PageTitle>
       <section>
         <img src={ProfileIcon} className='h-40 mb-4 lg:mb-0 lg:h-64 mx-auto lg:float-left lg:mr-5' />
