@@ -26,9 +26,9 @@ export function ProjectCard(props: ProjectCardProps) {
       }}
       onClick={handleCardClick}
     >
-      <div className="p-4">
-        <h4 className="text-lg font-semibold mb-2">{props.title}</h4>
-        <p className="text-sm text-gray-400">{props.description}</p>
+      <div className='p-4'>
+        <h4 className='text-lg font-semibold mb-2 text-left'>{props.title}</h4>
+        <p className='text-sm text-gray-400'>{props.description}</p>
       </div>
     </div>
   )
