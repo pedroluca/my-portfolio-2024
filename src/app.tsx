@@ -9,20 +9,18 @@ import { Analytics } from "@vercel/analytics/react"
 import { useState, useEffect } from 'react'
 
 export function App() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') === 'dark' ? 'dark' : 'light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') === 'light' ? 'light' : 'dark')
 
   useEffect(() => {
-    // Apply theme classes to body
-    document.body.className = theme === 'dark' 
-      ? 'bg-zinc-950 min-h-screen flex flex-col w-full text-zinc-300' 
-      : 'bg-white min-h-screen flex flex-col w-full text-zinc-900'
-    
-    // Save theme to localStorage
+    document.body.className = theme === 'light'
+      ? 'bg-white min-h-screen flex flex-col w-full text-zinc-900'
+      : 'bg-zinc-950 min-h-screen flex flex-col w-full text-zinc-300'
+
     localStorage.setItem('theme', theme)
   }, [theme])
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark')
+    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light')
   }
 
   return (
