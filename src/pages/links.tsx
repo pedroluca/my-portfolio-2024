@@ -1,8 +1,8 @@
-import { PageTitle } from "../components/page-title/page-title"
-import { LinkCard, LinkCardSkeleton } from "../components/cards/link-card"
-import { useState } from "react"
+import { PageTitle } from '../components/page-title/page-title'
+import { LinkCard, LinkCardSkeleton } from '../components/cards/link-card'
+import { useState } from 'react'
 
-export function Links() {
+export function Links({ theme }: { theme: string }) {
   const [isLoading, setIsLoading] = useState(true)
 
   setTimeout(() => setIsLoading(false), 500)
@@ -20,20 +20,20 @@ export function Links() {
 
   return (
     <section 
-      className="py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24 mb-16 min-h-screen"
+      className='py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24 mb-16 min-h-screen'
       style={{ minHeight: 'calc(100vh - 4rem - 4rem)' }}
     >
       <PageTitle>Links</PageTitle>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
         {isLoading ? (
           <>
-            <LinkCardSkeleton />
-            <LinkCardSkeleton />
-            <LinkCardSkeleton />
+            <LinkCardSkeleton theme={theme} />
+            <LinkCardSkeleton theme={theme} />
+            <LinkCardSkeleton theme={theme} />
           </>
         ) : (
           links.map(link => (
-            <LinkCard key={link.src} src={link.src} social={link.social} user={link.user} url={link.url} />
+            <LinkCard theme={theme} key={link.src} src={link.src} social={link.social} user={link.user} url={link.url} />
           ))
         )}
       </div>

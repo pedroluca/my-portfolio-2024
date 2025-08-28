@@ -12,6 +12,7 @@ interface LinkCardProps {
   social: string
   user: string
   url: string
+  theme: string
 }
 
 export function LinkCard(props: LinkCardProps) {
@@ -32,19 +33,19 @@ export function LinkCard(props: LinkCardProps) {
       className='flex flex-row items-center justify-between p-4 border rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer'
       onClick={handleCardClick}
     >
-      <img className='w-12 h-12 sm:w-16 sm:h-16' src={imagePath} alt='Social media specified logo' />
+      <img className={`w-12 h-12 sm:w-16 sm:h-16 ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
       <div className='flex flex-col sm:items-center sm:ml-4 sm:mt-0 sm:text-right'>
         <h4 className='text-xl font-semibold w-full'>{props.social}</h4>
         <p className='hidden sm:block text-sm text-gray-600 sm:ml-2 w-full'>{props.user}</p>
       </div>
-      <img className='w-12 h-12 sm:w-16 sm:h-16 opacity-0 sm:hidden' src={imagePath} alt='Social media specified logo' />
+      <img className={`w-12 h-12 sm:w-16 sm:h-16 opacity-0 sm:hidden ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
     </div>
   )
 }
 
-export function LinkCardSkeleton() {
+export function LinkCardSkeleton({ theme }: { theme: string }) {
   return (
-    <div className='flex flex-row items-center justify-between p-4 border rounded-3xl shadow-md animate-pulse'>
+    <div className={`flex flex-row items-center justify-between p-4 border rounded-3xl shadow-md animate-pulse ${theme === 'dark' ? 'bg-zinc-900 text-white' : 'bg-white text-black'}`}>
       <div className='w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 rounded-full'></div>
       <div className='flex flex-col sm:items-center sm:ml-4 sm:mt-0 sm:text-right'>
         <div className='h-6 bg-gray-400 rounded w-36 mt-2'></div>

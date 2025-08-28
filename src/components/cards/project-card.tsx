@@ -2,6 +2,7 @@ interface ProjectCardProps {
   title: string
   description: string
   url?: string
+  theme: string
 }
 
 export function ProjectCard(props: ProjectCardProps) {
@@ -11,7 +12,7 @@ export function ProjectCard(props: ProjectCardProps) {
 
   return (
     <div
-      className={`project-card ${props.url ? 'cursor-pointer' : 'cursor-default'} bg-zinc-900 text-white rounded-lg overflow-hidden transition-all duration-300 ease-in-out`}
+      className={`project-card ${props.url ? 'cursor-pointer' : 'cursor-default'} ${props.theme === 'dark' ? 'bg-zinc-900 text-white' : 'bg-white text-black'} rounded-lg overflow-hidden transition-all duration-300 ease-in-out`}
       style={{ 
         boxShadow: '0 1px 4px rgba(30, 144, 255, 0.3)',
         transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out'
@@ -28,7 +29,7 @@ export function ProjectCard(props: ProjectCardProps) {
     >
       <div className='p-4'>
         <h4 className='text-lg font-semibold mb-2 text-left'>{props.title}</h4>
-        <p className='text-sm text-gray-400'>{props.description}</p>
+        <p className={`text-sm ${props.theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>{props.description}</p>
       </div>
     </div>
   )

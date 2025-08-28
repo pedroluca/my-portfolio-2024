@@ -1,8 +1,8 @@
 import { PageTitle } from '../components/page-title/page-title'
 import ProfileIcon from '../assets/images/profile.png'
 
-export function About() {
-  const todayDate: Date = new Date();
+export function About({ theme }: { theme: string }) {
+  const todayDate: Date = new Date()
   const myBirthday: Date = new Date('2003-01-28')
   const differenceInMilliseconds: number = todayDate.getTime() - myBirthday.getTime()
   const myAge: number = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 365.25))
@@ -22,32 +22,32 @@ export function About() {
         <section className='flex flex-col gap-3'>
           <h2 className='text-3xl mt-6'>Carreira Profissional</h2>
           <div>
-            <h4 className='text-xl text-white'>Desenvolvedor Fullstack</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Desenvolvedor Fullstack</h4>
             <p>PROCEDE • Salvador, Bahia, Brasil</p>
             <p>Jun. 2025 -- Presente</p>
           </div>
           <div>
-            <h4 className='text-xl text-white'>Desenvolvedor Web Fullstack</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Desenvolvedor Web Fullstack</h4>
             <p>Freelancer • Brasil</p>
             <p>Ago. 2021 -- Presente</p>
           </div>
           <div>
-            <h4 className='text-xl text-white'>Estágio como Desenvolvedor Fullstack</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Estágio como Desenvolvedor Fullstack</h4>
             <p>VISDOM • Guanambi, Bahia, Brasil</p>
             <p>Dez. 2024 -- Fev. 2025</p>
           </div>
           <div>
-            <h4 className='text-xl text-white'>Estágio como Desenvolvedor Web</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Estágio como Desenvolvedor Web</h4>
             <p>VISDOM • Guanambi, Bahia, Brasil</p>
             <p>Abr. 2024 -- Jun. 2024</p>
           </div>
           <div>
-            <h4 className='text-xl text-white'>Técnico de Suporte em TI</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Técnico de Suporte em TI</h4>
             <p>Hospital Geral de Guanambi • Guanambi, Bahia, Brasil</p>
             <p>Dez. 2021 -- Ago. 2022</p>
           </div>
           <div>
-            <h4 className='text-xl text-white'>Estágio como Técnico de Suporte em TI</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Estágio como Técnico de Suporte em TI</h4>
             <p>VISDOM • Guanambi, Bahia, Brasil</p>
             <p>Jun. 2019 -- Fev. 2020</p>
           </div>
@@ -55,12 +55,12 @@ export function About() {
         <section className='flex flex-col gap-3'>
           <h2 className='text-3xl mt-6'>Carreira Acadêmica</h2>
           <div>
-            <h4 className='text-xl text-white'>Ensino Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Ensino Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
             <p>IF Baiano - <em>Campus</em> Guanambi • Guanambi, Bahia, Brasil</p>
             <p>Ago. 2022 -- Mar. 2025</p>
           </div>
           <div>
-            <h4 className='text-xl text-white'>Ensino Médio Integrado ao Curso Técnico em Informática para Internet</h4>
+            <h4 className={`text-xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Ensino Médio Integrado ao Curso Técnico em Informática para Internet</h4>
             <p>IF Baiano - <em>Campus</em> Guanambi • Guanambi, Bahia, Brasil</p>
             <p>Jan. 2018 -- Ago. 2021</p>
           </div>
