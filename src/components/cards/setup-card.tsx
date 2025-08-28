@@ -42,6 +42,7 @@ interface SetupCardProps {
   itemType: string
   itemName?: string
   url: string
+  theme: string
 }
 
 const imageMap: Record<string, string> = {
@@ -90,7 +91,7 @@ export function SetupCard(props: SetupCardProps) {
 
   return (
     <div 
-      className='setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in-out cursor-pointer' 
+      className={`setup-card p-3 ${props.theme === 'dark' ? 'bg-zinc-900 text-white' : 'bg-white text-black'} shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in-out cursor-pointer`} 
       style={{ 
         boxShadow: '0 1px 4px rgba(30, 144, 255, 0.3)',
         transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out'
@@ -114,9 +115,9 @@ export function SetupCard(props: SetupCardProps) {
   )
 }
 
-export function SetupCardSkeleton() {
+export function SetupCardSkeleton({ theme }: { theme: string }) {
   return (
-    <div className='setup-card p-3 bg-zinc-900 text-white shadow-md rounded-lg overflow-hidden transform transition-transform animate-pulse'>
+    <div className={`setup-card p-3 ${theme === 'dark' ? 'bg-zinc-900 text-white' : 'bg-white text-black'} shadow-md rounded-lg overflow-hidden transform transition-transform animate-pulse`}>
       <div className='img-contain p-1 w-full h-36 bg-gray-600 rounded mb-2'></div>
       <div className='p-0.5'>
         <div className='h-4 bg-gray-500 rounded w-1/2 mb-4'></div>
