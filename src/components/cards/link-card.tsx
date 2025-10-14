@@ -4,7 +4,7 @@ import Linkedin from '../../assets/images/linkedin.png'
 import Xtwitter from '../../assets/images/xtwitter.png'
 import Youtube from '../../assets/images/youtube.png'
 import Twitch from '../../assets/images/twitch.png'
-import Outlook from '../../assets/images/outlook.png'
+import { Mail } from 'lucide-react'
 import Duolingo from '../../assets/images/duolingo.png'
 
 interface LinkCardProps {
@@ -25,7 +25,7 @@ export function LinkCard(props: LinkCardProps) {
   else if (props.src === 'xtwitter') imagePath = Xtwitter
   else if (props.src === 'youtube') imagePath = Youtube
   else if (props.src === 'twitch') imagePath = Twitch
-  else if (props.src === 'outlook') imagePath = Outlook
+  // Outlook handled below with icon
   else if (props.src === 'duolingo') imagePath = Duolingo
 
   return (
@@ -33,12 +33,21 @@ export function LinkCard(props: LinkCardProps) {
       className='flex flex-row items-center justify-between p-4 border rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer'
       onClick={handleCardClick}
     >
-      <img className={`w-12 h-12 sm:w-16 sm:h-16 ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
+      {props.src === 'outlook' ? (
+        <Mail className='w-12 h-12 sm:w-16 sm:h-16' color='#5e95eb' />
+      ) : (
+        <img className={`w-12 h-12 sm:w-16 sm:h-16 ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
+      )}
       <div className='flex flex-col sm:items-center sm:ml-4 sm:mt-0 sm:text-right'>
         <h4 className='text-xl font-semibold w-full'>{props.social}</h4>
         <p className='hidden sm:block text-sm text-gray-600 sm:ml-2 w-full'>{props.user}</p>
       </div>
-      <img className={`w-12 h-12 sm:w-16 sm:h-16 opacity-0 sm:hidden ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
+      {/* Invisible image for layout, only for non-outlook */}
+      {props.src === 'outlook' ? (
+        <Mail className='w-12 h-12 sm:w-16 sm:h-16 opacity-0 sm:hidden' color='#5e95eb' />
+      ) : (
+        <img className={`w-12 h-12 sm:w-16 sm:h-16 opacity-0 sm:hidden ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
+      )}
     </div>
   )
 }
