@@ -9,9 +9,21 @@ export function Projects({ theme }: { theme: string }) {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         <ProjectCard
           theme={theme}
-          title='TrainLog'
-          description='Site para acompanhamento de treinos e exercícios, com temporizador de intervalos incluso e compartilhamento de treinos.' 
-          url='https://trainlogapp.vercel.app/'
+          title='App TrainLog'
+          description='Webapp para acompanhamento de treinos e exercícios, com temporizador de intervalos incluso e compartilhamento de treinos.' 
+          url='https://app.trainlog.site/'
+        />
+        <ProjectCard
+          theme={theme}
+          title='Site TrainLog'
+          description='Landing page para divulgação e venda do sistema TrainLog.' 
+          url='https://trainlog.site/'
+        />
+        <ProjectCard
+          theme={theme}
+          title='Finances'
+          description='Sistema de Gerenciamento de Faturas e Compras no Cartão de Crédito.' 
+          url='https://finances.pedroluca.dev.br/'
         />
         <ProjectCard
           theme={theme}
