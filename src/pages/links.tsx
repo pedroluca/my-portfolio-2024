@@ -15,7 +15,7 @@ export function Links({ theme }: { theme: string }) {
     { src: 'youtube', social: 'YouTube', user: 'Pedro Luca Prates', url: 'https://youtube.com/channel/@pedrolucaofc' },
     { src: 'twitch', social: 'Twitch', user: 'PedroLucaOFC', url: 'https://twitch.tv/PedroLucaOFC' },
     { src: 'duolingo', social: 'Duolingo', user: 'pedroluca.p', url: 'https://www.duolingo.com/profile/pedroluca.p' },
-    { src: 'outlook', social: 'Outlook', user: 'pedrolucaofc', url: 'mailto:pedrolucaofc@outlook.com' },
+    { src: 'outlook', social: 'E-mail', user: 'pedrolucaofc@outlook.com', url: 'mailto:pedrolucaofc@outlook.com' },
   ]
 
   return (
