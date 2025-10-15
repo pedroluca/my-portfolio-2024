@@ -1,5 +1,5 @@
 import { PageTitle } from '../components/page-title/page-title'
-import ProfileIcon from '../assets/images/profile.png'
+import ProfileIcon from '../assets/images/profile.webp'
 
 export function About({ theme }: { theme: string }) {
   const todayDate: Date = new Date()

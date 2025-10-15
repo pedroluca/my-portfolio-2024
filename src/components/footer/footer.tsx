@@ -1,9 +1,9 @@
 import { FooterButton } from './footer-button'
-import LinkedinIcon from '../../assets/images/linkedin-color.svg'
-import GithubIcon from '../../assets/images/github-color.svg'
-import InstagramIcon from '../../assets/images/instagram-color.svg'
-import YoutubeIcon from '../../assets/images/youtube-color.svg'
-import TwitterIcon from '../../assets/images/x-color.svg'
+import LinkedinIcon from '../../assets/images/linkedin-color.webp'
+import GithubIcon from '../../assets/images/github-color.webp'
+import InstagramIcon from '../../assets/images/instagram-color.webp'
+import YoutubeIcon from '../../assets/images/youtube-color.webp'
+import TwitterIcon from '../../assets/images/x-color.webp'
 
 export function Footer({ theme }: { theme: string }) {
   return (

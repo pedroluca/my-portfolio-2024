@@ -1,7 +1,7 @@
 import { MoonStar, PanelRightClose, PanelRightOpen, Sun } from 'lucide-react'
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { twMerge } from 'tailwind-merge'
-import NewLogo from '../../assets/images/logo.svg'
+import NewLogo from '../../assets/images/logo.webp'
 import { MyNavLink } from './my-navlink'
 import { useEffect, useState } from 'react'
 

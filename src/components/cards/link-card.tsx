@@ -1,11 +1,11 @@
-import Instagram from '../../assets/images/instagram.png'
-import Github from '../../assets/images/github.png'
-import Linkedin from '../../assets/images/linkedin.png'
-import Xtwitter from '../../assets/images/xtwitter.png'
-import Youtube from '../../assets/images/youtube.png'
-import Twitch from '../../assets/images/twitch.png'
+import Instagram from '../../assets/images/instagram.webp'
+import Github from '../../assets/images/github.webp'
+import Linkedin from '../../assets/images/linkedin.webp'
+import Xtwitter from '../../assets/images/xtwitter.webp'
+import Youtube from '../../assets/images/youtube.webp'
+import Twitch from '../../assets/images/twitch.webp'
 import { Mail } from 'lucide-react'
-import Duolingo from '../../assets/images/duolingo.png'
+import Duolingo from '../../assets/images/duolingo.webp'
 
 interface LinkCardProps {
   src: string
