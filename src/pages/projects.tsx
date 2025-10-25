@@ -29,28 +29,35 @@ export function Projects({ theme }: { theme: string }) {
           theme={theme}
           title='I Olimpíadas Científicas do Território Sertão Produtivo'
           description='Site para divulgação de datas, inscrições, e contato dos participantes das I Olimpíadas Científicas do Território Sertão Produtivo.' 
-          url='https://www.olimpiadasdosertaoprodutivo.com/'
+          url='https://olimpiadas-cientificas.vercel.app/'
         />
         <ProjectCard
           theme={theme}
           title='Blog Criança Alerta' 
-          description='Blog educativo com o intuito de ensinar para as crianças e adolescentes sobre seus direitos.' 
-          url='https://www.blogcriancaalerta.epizy.com/' 
+          description='Blog educativo com o intuito de ensinar para as crianças e adolescentes sobre seus direitos. Cards interativos e joguinho Scratch integrado.' 
+          url='https://tan-ant-672552.hostingersite.com/' 
         />
-        <ProjectCard
+        {/* <ProjectCard
           theme={theme}
           title='Gerenciador de faturas' 
           description='Um simples site para gerenciamento de fatores e compras no cartão de crédito.' 
           url='https://billing-manager.vercel.app/' 
-        />
+        /> */}
         <ProjectCard
           theme={theme}
-          title='Site do IF Baiano campus Guanambi' 
+          title='Site do IFBAIANO - Guanambi' 
           description='Atividade acadêmica cujo intuito era desenvolver ou repaginar um site' 
           url='https://repage-if-baiano.vercel.app/' 
         />
       </div>
-      <p className={`mt-6 ${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'} flex gap-2 items-center hover:cursor-pointer transition-colors`} onClick={() => window.open('https://github.com/pedroluca', '_blank')}>
+      <p 
+        className={`mt-6 ${
+          theme === 'dark' ? 
+          'text-gray-400 hover:text-white' : 
+          'text-gray-600 hover:text-black'
+          } flex gap-2 items-center hover:cursor-pointer transition-colors`} 
+        onClick={() => window.open('https://github.com/pedroluca', '_blank')}
+      >
         Veja mais projetos
         <MoveRight />
       </p>
