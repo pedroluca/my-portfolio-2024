@@ -30,7 +30,7 @@ export function LinkCard(props: LinkCardProps) {
 
   return (
     <div 
-      className='flex flex-row items-center justify-between p-4 border rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer'
+      className={`flex flex-row items-center justify-between p-4 border rounded-3xl ${props.theme === 'dark' ? 'hover:bg-zinc-900 text-white' : 'hover:bg-zinc-100 text-black'} transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer`}
       onClick={handleCardClick}
     >
       {props.src === 'outlook' ? (
