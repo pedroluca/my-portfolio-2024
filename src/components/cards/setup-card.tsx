@@ -9,6 +9,7 @@ import Earpods from '@/images/setup-images/earpods.webp'
 import Mouse1 from '@/images/setup-images/mouse1.webp'
 import Mouse2 from '@/images/setup-images/mouse2.webp'
 import Mousepad from '@/images/setup-images/mousepad.webp'
+import Mousepad2 from '@/images/setup-images/mousepad2.webp'
 import CodigoLimpo from '@/images/setup-images/codigo.webp'
 import Arquitetura from '@/images/setup-images/arquitetura.webp'
 import PHP4 from '@/images/setup-images/php4.webp'
@@ -30,12 +31,13 @@ import SuporteCabos from '@/images/setup-images/suporte-mesa.webp'
 import LotrBox from '@/images/setup-images/lotr-box.webp'
 import Hyper from '@/images/setup-images/hyper.webp'
 import Monitor from '@/images/setup-images/monitor.webp'
+import Monitor2 from '@/images/setup-images/monitor2.webp'
 import Solasterion from '@/images/setup-images/solasterion.webp'
 import Moleskine from '@/images/setup-images/moleskine.webp'
 import Abajur from '@/images/setup-images/abajur.webp'
 import Pinho from '@/images/setup-images/pinho.webp'
 
-type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'solasterion' | 'moleskine' | 'abajur' | 'pinho'
+type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mousepad2' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'monitor2' | 'solasterion' | 'moleskine' | 'abajur' | 'pinho'
 
 interface SetupCardProps {
   src: ImageMapKeys
@@ -43,6 +45,7 @@ interface SetupCardProps {
   itemName?: string
   url: string
   theme: string
+  roundImg?: boolean
 }
 
 const imageMap: Record<string, string> = {
@@ -53,6 +56,7 @@ const imageMap: Record<string, string> = {
   headphone: Headphone,
   headset: Headset,
   mousepad: Mousepad,
+  mousepad2: Mousepad2,
   mintheme: MinTheme,
   vesperpptheme: VesperppTheme,
   jetbrains: JetBrains,
@@ -79,6 +83,7 @@ const imageMap: Record<string, string> = {
   hyper: Hyper,
   solasterion: Solasterion,
   monitor: Monitor,
+  monitor2: Monitor2,
   moleskine: Moleskine,
   abajur: Abajur,
   pinho: Pinho,
@@ -91,7 +96,7 @@ export function SetupCard(props: SetupCardProps) {
 
   return (
     <div 
-      className={`setup-card p-3 ${props.theme === 'dark' ? 'bg-zinc-900 text-white' : 'bg-white text-black'} shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in-out cursor-pointer`} 
+      className={`setup-card p-3 flex flex-col items-center ${props.theme === 'dark' ? 'bg-zinc-900 text-white' : 'bg-white text-black'} shadow-md rounded-lg overflow-hidden transition-all duration-300 ease-in-out cursor-pointer`} 
       style={{ 
         boxShadow: '0 1px 4px rgba(30, 144, 255, 0.3)',
         transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out'
@@ -106,8 +111,8 @@ export function SetupCard(props: SetupCardProps) {
       }}
       onClick={handleCardClick}
     >
-      <img className={`img-contain p-1 w-full h-36 object-contain ${(props.src === 'jetbrains' || props.src === 'designdev') && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt={`${props.itemType} image`} />
-      <div className='p-0.5'>
+      <img className={`img-contain p-1 h-36 object-contain ${(props.src === 'jetbrains' || props.src === 'designdev') && props.theme === 'light' ? 'invert' : ''} ${props.roundImg ? 'rounded-xl' : ''}`} src={imagePath} alt={`${props.itemType} image`} />
+      <div className='p-0.5 w-full'>
         <h4 className='text-lg font-semibold mb-2 text-left'>{props.itemType}</h4>
         <p className='text-sm text-left text-gray-400'>{props.itemName}</p>
       </div>
