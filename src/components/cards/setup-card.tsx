@@ -114,7 +114,7 @@ export function SetupCard(props: SetupCardProps) {
       <img className={`img-contain p-1 h-36 object-contain ${(props.src === 'jetbrains' || props.src === 'designdev') && props.theme === 'light' ? 'invert' : ''} ${props.roundImg ? 'rounded-xl' : ''}`} src={imagePath} alt={`${props.itemType} image`} />
       <div className='p-0.5 w-full'>
         <h4 className='text-lg font-semibold mb-2 text-left'>{props.itemType}</h4>
-        <p className='text-sm text-left text-gray-400'>{props.itemName}</p>
+        <p className='text-sm text-left text-gray-400 bg-zinc-800 w-fit py-1 px-3 rounded-2xl'>{props.itemName}</p>
       </div>
     </div>
   )
