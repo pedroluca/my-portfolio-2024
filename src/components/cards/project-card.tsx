@@ -1,13 +1,20 @@
+import { ProjectDetailCardProps } from "./project-detail.card"
+
 interface ProjectCardProps {
   title: string
   description: string
   url?: string
+  imageUrl?: string
   theme: string
+  setIsDetailModalOpen?: (isOpen: boolean) => void
+  setDetailProject?: (project: ProjectDetailCardProps) => void
 }
 
 export function ProjectCard(props: ProjectCardProps) {
+
   const handleCardClick = () => {
-    if (props.url) window.open(props.url, '_blank')
+    props.setDetailProject && props.setDetailProject({ title: props.title, description: props.description, projectUrl: props.url, imageUrl: props.imageUrl, theme: props.theme })
+    props.setIsDetailModalOpen && props.setIsDetailModalOpen(true)
   }
 
   return (
