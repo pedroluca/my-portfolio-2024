@@ -25,22 +25,21 @@ export function LinkCard(props: LinkCardProps) {
   else if (props.src === 'xtwitter') imagePath = Xtwitter
   else if (props.src === 'youtube') imagePath = Youtube
   else if (props.src === 'twitch') imagePath = Twitch
-  // Outlook handled below with icon
   else if (props.src === 'duolingo') imagePath = Duolingo
 
   return (
     <div 
-      className={`flex flex-row items-center justify-between p-4 border rounded-3xl ${props.theme === 'dark' ? 'hover:bg-zinc-900 text-white' : 'hover:bg-zinc-100 text-black'} transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer`}
+      className={`flex flex-row items-center justify-between py-3 px-2.5 border rounded-3xl ${props.theme === 'dark' ? 'hover:bg-zinc-900 text-white' : 'hover:bg-zinc-100 text-black'} transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer`}
       onClick={handleCardClick}
     >
       {props.src === 'outlook' ? (
-        <Mail className='w-12 h-12 sm:w-16 sm:h-16' color='#5e95eb' />
+        <Mail size={48} color='#5e95eb' />
       ) : (
-        <img className={`w-12 h-12 sm:w-16 sm:h-16 ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
+        <img className={`w-12 h-12 ${props.src === 'xtwitter' && props.theme === 'light' ? 'invert' : ''}`} src={imagePath} alt='Social media specified logo' />
       )}
       <div className='flex flex-col sm:items-center sm:ml-4 sm:mt-0 sm:text-right'>
         <h4 className='text-xl font-semibold w-full'>{props.social}</h4>
-        <p className='hidden sm:block text-sm text-gray-600 sm:ml-2 w-full'>{props.user}</p>
+        <p className='hidden sm:block text-sm text-gray-600 w-full'>{props.user}</p>
       </div>
       {/* Invisible image for layout, only for non-outlook */}
       {props.src === 'outlook' ? (
