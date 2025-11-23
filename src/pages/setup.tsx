@@ -64,7 +64,9 @@ export function Setup({ theme }: { theme: string }) {
             ) : (
               <>
                 <SetupCard theme={theme} src='vscode' itemType='VS Code' itemName='IDE' url='https://code.visualstudio.com/' />
+                <SetupCard theme={theme} src='antigravity' itemType='Antigravity' itemName='IDE' url='https://antigravity.google/' />
                 <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper++' itemName='Tema' url='https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp' />
+                <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper Extended Cursor' itemName='Tema' url='https://open-vsx.org/extension/oreofreakshake/vesper-extended-cursor' />
                 <SetupCard theme={theme} src='jetbrains' itemType='JetBrains Mono' itemName='Fonte' url='https://www.jetbrains.com/pt-br/lp/mono/' />
                 <SetupCard theme={theme} src='hyper' itemType='Hyper' itemName='Terminal' url='https://hyper.is/' />
                 <SetupCard theme={theme} src='gitbash' itemType='Git Bash for Windows' itemName='Shell' url='https://git-scm.com/' />

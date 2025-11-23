@@ -36,8 +36,9 @@ import Solasterion from '@/images/setup-images/solasterion.webp'
 import Moleskine from '@/images/setup-images/moleskine.webp'
 import Abajur from '@/images/setup-images/abajur.webp'
 import Pinho from '@/images/setup-images/pinho.webp'
+import Antigravity from '@/images/setup-images/antigravity.webp'
 
-type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mousepad2' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'monitor2' | 'solasterion' | 'moleskine' | 'abajur' | 'pinho'
+type ImageMapKeys = 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset' | 'mousepad' | 'mousepad2' | 'mintheme' | 'vesperpptheme' | 'jetbrains' | 'vscode' | 'codigo' | 'arquitetura' | 'php4' | 'estrutura' | 'android' | 'deschamps' | 'thenews' | 'codecon' | 'biro' | 'suporte' | 'ohmyzsh' | 'gitbash' | 'hyper' | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos' | 'lotrBox' | 'monitor' | 'monitor2' | 'solasterion' | 'moleskine' | 'abajur' | 'pinho' | 'antigravity'
 
 interface SetupCardProps {
   src: ImageMapKeys
@@ -87,6 +88,7 @@ const imageMap: Record<string, string> = {
   moleskine: Moleskine,
   abajur: Abajur,
   pinho: Pinho,
+  antigravity: Antigravity
 }
 
 export function SetupCard(props: SetupCardProps) {
