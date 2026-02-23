@@ -22,7 +22,7 @@ export function CareerTimeline({ theme }: { theme: string }) {
       {/* Desktop: timeline agrupada por ano */}
       <div className='hidden sm:flex flex-col'>
 
-        <div className={`w-full mb-4 text-center font-semibold uppercase tracking-wide ${dark ? 'text-zinc-400' : 'text-zinc-500'}`}>Experiência</div>
+        <div className={`w-full text-lg mb-4 text-center font-semibold uppercase tracking-wide ${dark ? 'text-zinc-400' : 'text-zinc-500'}`}>Experiência</div>
 
         {/* Cabeçalho das colunas */}
         <div className='flex items-center mb-2'>
@@ -54,7 +54,7 @@ export function CareerTimeline({ theme }: { theme: string }) {
               <div className='flex-1 flex flex-col items-end gap-3 text-right pr-8 py-5'>
                 {leftItems.map(item => (
                   <div key={item.id}>
-                    <h4 className={`text-sm font-semibold leading-snug ${dark ? 'text-white' : 'text-black'}`}>
+                    <h4 className={`text-base font-semibold leading-snug ${dark ? 'text-white' : 'text-black'}`}>
                       {item.title}
                     </h4>
                     <p className='text-xs text-blue-400'>{item.place}</p>
@@ -85,7 +85,7 @@ export function CareerTimeline({ theme }: { theme: string }) {
               <div className='flex-1 flex flex-col gap-3 pl-8 py-5'>
                 {rightItems.map(item => (
                   <div key={item.id}>
-                    <h4 className={`text-sm font-semibold leading-snug ${dark ? 'text-white' : 'text-black'}`}>
+                    <h4 className={`text-base font-semibold leading-snug ${dark ? 'text-white' : 'text-black'}`}>
                       {item.title}
                     </h4>
                     <p className='text-xs text-violet-400'>{item.place}</p>
