@@ -36,7 +36,7 @@ export function Header ({ theme, toggleTheme }: HeaderProps) {
   }
 
   return (
-    <header className='flex px-3 lg:px-[25%] py-1 w-full h-16 items-center fixed justify-between backdrop-blur-md border-b border-white/20 z-10'>
+    <header className='flex px-3 lg:px-[25%] py-1 w-full h-16 items-center fixed justify-between backdrop-blur-md border-b border-white/20 z-30'>
       <div className='flex items-center gap-4'>
         <NavLink to='/' className='flex items-center'>
           <img 

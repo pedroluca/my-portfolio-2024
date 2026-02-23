@@ -1,7 +1,6 @@
 import { PageTitle } from '../components/page-title/page-title'
 import ProfileIcon from '../assets/images/profile.webp'
-import { ProfessionalCareerList } from '../components/about/professional-career-list'
-import { AcademicCareerList } from '../components/about/academic-career-list'
+import { CareerTimeline } from '../components/about/career-timeline'
 
 export function About({ theme }: { theme: string }) {
   const todayDate: Date = new Date()
@@ -20,10 +19,7 @@ export function About({ theme }: { theme: string }) {
         <br />
         <p>Tenho experiência com as tecnologias: HTML, CSS, JavaScript, TypeScript, Python, Django, PHP, Laravel, SQL, Java, C e atualmente estou estudando React.JS.</p>
       </section>
-      <section className='grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
-        <ProfessionalCareerList theme={theme} />
-        <AcademicCareerList theme={theme} />
-      </section>
+      <CareerTimeline theme={theme} />
     </main>
   )
 }
