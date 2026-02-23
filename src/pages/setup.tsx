@@ -14,6 +14,7 @@ export function Setup({ theme }: { theme: string }) {
       <nav className='flex gap-4 mb-8'>
         <a href='#workstation-section' className='text-blue-500 hover:underline'>Workstation</a>
         <a href='#coding-section' className='text-blue-500 hover:underline'>Coding</a>
+        <a href='#web-tools-section' className='text-blue-500 hover:underline'>Web Tools</a>
         <a href='#books-section' className='text-blue-500 hover:underline'>Books</a>
         <a href='#newsletter-section' className='text-blue-500 hover:underline'>Newsletter</a>
       </nav>
@@ -32,7 +33,8 @@ export function Setup({ theme }: { theme: string }) {
               <>
                 <SetupCard theme={theme} src='laptop' itemType='Samsung Galaxy Book3 360 13.3"' itemName='Laptop' url='https://www.amazon.com.br/dp/B0C5RY1WG9?psc=1&ref=ppx_yo2ov_dt_b_product_details' />
                 <SetupCard theme={theme} src='monitor' itemType='LG Ultrawide 25UM58G-P 25"' itemName='Monitor' url='https://www.lg.com/br/monitores/monitores-ultrawide/25um58g-p/' />
-                <SetupCard theme={theme} src='monitor2' itemType='LG Flatron E1941 18.5"' itemName='Monitor' url='https://www.artsolutioninformatica.com.br/monitor-lg-flatron-e1941c-185-polegadas' />
+                <SetupCard theme={theme} src='monitor2' itemType='Samsung S3 24"' itemName='Monitor' url='https://www.mercadolivre.com.br/monitor-gamer-samsung-24-fhd100-hz-hdmi-vgapreto-s3/p/MLB46560669#polycard_client=recommendations_cart_list_history&reco_backend=user_navigation_cart&reco_client=cart_list_history&reco_item_pos=2&reco_backend_type=function&reco_id=f7137fde-c7aa-4626-9bf9-6642a0a9be2d&wid=MLB5398777122&sid=recos' />
+                {/* <SetupCard theme={theme} src='monitor2' itemType='Samsung S3 24"' itemName='Monitor' url='https://www.artsolutioninformatica.com.br/monitor-lg-flatron-e1941c-185-polegadas' /> */}
                 <SetupCard theme={theme} src='earpods' itemType='QCY HT08 / Melobuds Pro' itemName='Earpods' url='https://www.amazon.com.br/dp/B0D4QRHDZ9?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1' />
                 <SetupCard theme={theme} src='headphone' itemType='QCY H3' itemName='Headphone' url='https://www.amazon.com.br/QCY-ANC-Cancelamento-Certifica%C3%A7%C3%A3o-Multipontos/dp/B0CFFD7K4F/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&sr=8-2' />
                 {/* <SetupCard theme={theme} src='headset' itemType='Headset' itemName='Razer Kraken Lite' url='https://www.amazon.com.br/gp/product/B07XC936P8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' /> */}
@@ -40,7 +42,7 @@ export function Setup({ theme }: { theme: string }) {
                 <SetupCard theme={theme} src='mousepad' itemType='Eddias Deskpad Office' itemName='Mousepad' url='https://www.eddias.com.br/products/mousepad-deskpad-office?variant=44281336103229' />
                 <SetupCard theme={theme} src='mousepad2' itemType='Fortrek G Speed Medium' itemName='Mousepad' url='https://www.amazon.com.br/gp/product/B0765YY6TM/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1' />
                 <SetupCard theme={theme} src='smartphone' itemType='Redmi Note 11 Pro' itemName='Smartphone' url='https://www.mi.com/br/product/redmi-note-11-pro/' />
-                <SetupCard theme={theme} src='smartwatch' itemType='Infinix Watch S3' itemName='Smartwatch' url='https://www.mercadolivre.com.br/smartwatch-infinix-s3-full-touch-169-polegadas-preto/p/MLB26769125' />
+                <SetupCard theme={theme} src='smartwatch' itemType='Samsung Galaxy Fit3' itemName='Smartband' url='https://www.mercadolivre.com.br/samsung-smartwatch-galaxy-fit3-grafite/p/MLB34163245?pdp_filters=item_id:MLB3956720093' />
                 <SetupCard theme={theme} src='alexa' itemType='Alexa Echo Dot 4ª gen' itemName='Assistente' url='https://www.amazon.com.br/Echo-Dot-com-Rel%C3%B3gio-Cor-Branca/dp/B084J4WP6J' />
                 <SetupCard theme={theme} src='hub' itemType='Hub USB-C -> USB-A' itemName='Acessório' url='https://pt.aliexpress.com/item/1005005445851704.html?spm=a2g0o.order_list.order_list_main.30.21efcaa40xX5Os&gatewayAdapt=glo2bra' />
                 <SetupCard theme={theme} src='moleskine' itemType='Moleskine' itemName='Acessório' url='https://www.desenherabisque.com.br/' />
@@ -63,13 +65,37 @@ export function Setup({ theme }: { theme: string }) {
               </>
             ) : (
               <>
-                <SetupCard theme={theme} src='vscode' itemType='VS Code' itemName='IDE' url='https://code.visualstudio.com/' />
                 <SetupCard theme={theme} src='antigravity' itemType='Antigravity' itemName='IDE' url='https://antigravity.google/' />
+                <SetupCard theme={theme} src='vscode' itemType='VS Code' itemName='IDE' url='https://code.visualstudio.com/' />
                 <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper++' itemName='Tema' url='https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp' />
                 <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper Extended Cursor' itemName='Tema' url='https://open-vsx.org/extension/oreofreakshake/vesper-extended-cursor' />
                 <SetupCard theme={theme} src='jetbrains' itemType='JetBrains Mono' itemName='Fonte' url='https://www.jetbrains.com/pt-br/lp/mono/' />
                 <SetupCard theme={theme} src='hyper' itemType='Hyper' itemName='Terminal' url='https://hyper.is/' />
                 <SetupCard theme={theme} src='gitbash' itemType='Git Bash for Windows' itemName='Shell' url='https://git-scm.com/' />
+              </>
+            )}
+          </div>
+        </div>
+        <div className='pt-20' id='web-tools-section'>
+          <h3 className='mb-3 text-2xl'>Web Tools</h3>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6 tooltip-container'>
+            {loading ? (
+              <>
+                <SetupCardSkeleton theme={theme} />
+                <SetupCardSkeleton theme={theme} />
+                <SetupCardSkeleton theme={theme} />
+                <SetupCardSkeleton theme={theme} />
+              </>
+            ) : (
+              <>
+                <SetupCard theme={theme} roundImg src='brave' itemType='Brave Browser' itemName='Browser' url='https://www.amazon.com.br/gp/product/8576082675/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' />
+                <SetupCard theme={theme} roundImg src='arc' itemType='Arc Browser' itemName='Browser' url='https://www.amazon.com.br/gp/product/8550804606/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' />
+                <SetupCard theme={theme} src='chrome' itemType='Google Chrome' itemName='Browser' url='/setup' />
+                <SetupCard theme={theme} roundImg src='helium' itemType='Helium' itemName='Browser' url='/setup' />
+                <SetupCard theme={theme} src='notion' itemType='Notion' itemName='Note taking' url='/setup' />
+                <SetupCard theme={theme} src='spotify' itemType='Spotify' itemName='Music' url='https://www.amazon.com.br/dp/8595086354?ref=ppx_yo2ov_dt_b_fed_asin_title' />
+                <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud Storage' url='https://solasterion.com' />
+                <SetupCard theme={theme} src='github' itemType='GitHub' itemName='Version Control' url='https://solasterion.com' />
               </>
             )}
           </div>
