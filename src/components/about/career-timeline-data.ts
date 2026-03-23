@@ -44,7 +44,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'em-tecnico',
     side: 'right',
-    title: 'Ensino Médio — Técnico em Informática para Internet',
+    title: 'Ensino Médio - Técnico em Informática para Internet',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2018, 0],
     end: [2021, 7],
@@ -86,7 +86,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-suporte',
     side: 'left',
-    title: 'Estágio — Suporte em TI',
+    title: 'Estágio - Suporte em TI',
     place: 'VISDOM • Guanambi, BA',
     start: [2019, 5],
     end: [2020, 1],
@@ -109,7 +109,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-dev-web',
     side: 'left',
-    title: 'Estágio — Desenvolvedor Web',
+    title: 'Estágio - Desenvolvedor Web',
     place: 'VISDOM • Guanambi, BA',
     start: [2024, 3],
     end: [2024, 5],
@@ -117,7 +117,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-dev-fullstack',
     side: 'left',
-    title: 'Estágio — Desenvolvedor Fullstack',
+    title: 'Estágio - Desenvolvedor Fullstack',
     place: 'VISDOM • Guanambi, BA',
     start: [2024, 11],
     end: [2025, 1],
@@ -125,7 +125,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-procede',
     side: 'left',
-    title: 'Estágio — Desenvolvedor Fullstack',
+    title: 'Estágio - Desenvolvedor Fullstack',
     place: 'PROCEDE • Salvador, BA',
     start: [2025, 5],
     end: [2025, 6],
