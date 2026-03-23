@@ -4,13 +4,13 @@ export function AcademicCareerList({ theme }: { theme: string }) {
   return (
     <section className='flex flex-col gap-5'>
       <h2 className='text-2xl font-semibold'>Carreira Acadêmica</h2>
-      <CareerCard
+      {/* <CareerCard
         side='right'
         theme={theme}
         title='II Tenda da Ciência - Sistema para 1ª Olimpíadas Científicas'
         place='IF Baiano - Campus Guanambi • Guanambi, Bahia, Brasil'
         period='Abr. 2024'
-      />
+      /> */}
       <CareerCard
         side='right'
         theme={theme}

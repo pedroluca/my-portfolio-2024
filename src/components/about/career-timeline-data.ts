@@ -36,7 +36,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'cna',
     side: 'right',
-    title: 'CNA Master in English',
+    title: 'Curso de Inglês - CNA Master in English',
     place: 'CNA • Guanambi, BA',
     start: [2016, 0],
     end: [2022, 11],
@@ -44,7 +44,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'em-tecnico',
     side: 'right',
-    title: 'Ensino Médio — Técnico em Informática',
+    title: 'Ensino Médio — Técnico em Informática para Internet',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2018, 0],
     end: [2021, 7],
@@ -52,7 +52,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'vila-ciencia',
     side: 'right',
-    title: 'I Vila da Ciência',
+    title: 'Apresentação de Projeto - I Vila da Ciência',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2018, 10],
     isEvent: true,
@@ -60,7 +60,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'ads',
     side: 'right',
-    title: 'Tecnologia em ADS',
+    title: 'Ensino Superior - Tecnologia em Análise e Desenvolvimento de Sistemas',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2022, 7],
     end: [2025, 2],
@@ -68,7 +68,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: '2-tenda-ciencia',
     side: 'right',
-    title: 'II Tenda da Ciência',
+    title: 'Apresentação de Projeto - II Tenda da Ciência',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2024, 3],
     isEvent: true,
@@ -76,7 +76,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: '1-tenda-ciencia',
     side: 'right',
-    title: 'I Tenda da Ciência',
+    title: 'Apresentação de Projeto - I Tenda da Ciência',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2023, 3],
   },
@@ -93,7 +93,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'freelancer',
     side: 'left',
-    title: 'Dev Web Fullstack',
+    title: 'Desenvolvedor Web Fullstack',
     place: 'Freelancer • Brasil',
     start: [2021, 7],
   },
@@ -108,7 +108,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-dev-web',
     side: 'left',
-    title: 'Estágio — Dev Web',
+    title: 'Estágio — Desenvolvedor Web',
     place: 'VISDOM • Guanambi, BA',
     start: [2024, 3],
     end: [2024, 5],
@@ -116,7 +116,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-dev-fullstack',
     side: 'left',
-    title: 'Estágio — Dev Fullstack',
+    title: 'Estágio — Desenvolvedor Fullstack',
     place: 'VISDOM • Guanambi, BA',
     start: [2024, 11],
     end: [2025, 1],
@@ -124,7 +124,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'estagio-procede',
     side: 'left',
-    title: 'Estágio — Dev Fullstack',
+    title: 'Estágio — Desenvolvedor Fullstack',
     place: 'PROCEDE • Salvador, BA',
     start: [2025, 5],
     end: [2025, 6],
@@ -132,7 +132,7 @@ export const timelineItems: TimelineItem[] = [
   {
     id: 'procede',
     side: 'left',
-    title: 'Dev Fullstack',
+    title: 'Desenvolvedor Fullstack',
     place: 'PROCEDE • Salvador, BA',
     start: [2025, 6],
   },
