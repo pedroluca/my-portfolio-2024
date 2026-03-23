@@ -79,6 +79,7 @@ export const timelineItems: TimelineItem[] = [
     title: 'Apresentação de Projeto - I Tenda da Ciência',
     place: 'IFBAIANO - Campus Guanambi',
     start: [2023, 3],
+    isEvent: true,
   },
 
   // ─── Profissional (esquerda) ───────────────────────────────────────────────
