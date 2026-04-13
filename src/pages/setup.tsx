@@ -11,17 +11,17 @@ export function Setup({ theme }: { theme: string }) {
   return (
     <section className='py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24 mb-16'>
       <PageTitle>Setup</PageTitle>
-      <nav className='flex gap-4 mb-8'>
-        <a href='#workstation-section' className='text-blue-500 hover:underline'>Workstation</a>
-        <a href='#coding-section' className='text-blue-500 hover:underline'>Coding</a>
-        <a href='#web-tools-section' className='text-blue-500 hover:underline'>Web Tools</a>
-        <a href='#books-section' className='text-blue-500 hover:underline'>Books</a>
-        <a href='#newsletter-section' className='text-blue-500 hover:underline'>Newsletter</a>
+      <nav className='flex gap-3 mb-8 overflow-x-auto pb-2' style={{ scrollbarWidth: 'none' }}>
+        <a href='#workstation-section' className='whitespace-nowrap px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 transition-colors'>Workstation</a>
+        <a href='#coding-section' className='whitespace-nowrap px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 transition-colors'>Coding</a>
+        <a href='#web-tools-section' className='whitespace-nowrap px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 transition-colors'>Web Tools</a>
+        <a href='#books-section' className='whitespace-nowrap px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 transition-colors'>Books</a>
+        <a href='#newsletter-section' className='whitespace-nowrap px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 transition-colors'>Newsletter</a>
       </nav>
       <section className='flex flex-col'>
         <div className='' id='workstation-section'>
           <h3 className='mb-3 text-2xl'>Workstation</h3>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6'>
             {loading ? (
               <>
                 <SetupCardSkeleton theme={theme} />
@@ -51,7 +51,7 @@ export function Setup({ theme }: { theme: string }) {
         </div>
         <div className='pt-20' id='coding-section'>
           <h3 className='mb-3 text-2xl'>Coding</h3>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6'>
             {loading ? (
               <>
                 <SetupCardSkeleton theme={theme} />
@@ -74,7 +74,7 @@ export function Setup({ theme }: { theme: string }) {
         </div>
         <div className='pt-20' id='web-tools-section'>
           <h3 className='mb-3 text-2xl'>Web Tools</h3>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6 tooltip-container'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6 tooltip-container'>
             {loading ? (
               <>
                 <SetupCardSkeleton theme={theme} />
@@ -84,21 +84,21 @@ export function Setup({ theme }: { theme: string }) {
               </>
             ) : (
               <>
-                <SetupCard theme={theme} roundImg src='brave' itemType='Brave Browser' itemName='Browser' url='https://brave.com' />
-                <SetupCard theme={theme} roundImg src='arc' itemType='Arc Browser for Windows' itemName='Browser' url='https://arc.net' />
-                <SetupCard theme={theme} src='chrome' itemType='Google Chrome' itemName='Browser' url='https://www.google.com/intl/pt-BR/chrome' />
-                <SetupCard theme={theme} roundImg src='helium' itemType='Helium' itemName='Browser' url='https://helium.computer' />
-                <SetupCard theme={theme} src='notion' itemType='Notion' itemName='Note taking' url='https://notion.com' />
-                <SetupCard theme={theme} src='spotify' itemType='Spotify' itemName='Music' url='https://spotify.com' />
-                <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud Storage' url='https://drive.google.com' />
-                <SetupCard theme={theme} src='github' itemType='GitHub' itemName='Version Control' url='https://github.com' />
+                <SetupCard theme={theme} roundImg src='brave' itemType='Brave Browser' itemName='Navegador' url='https://brave.com' />
+                <SetupCard theme={theme} roundImg src='arc' itemType='Arc Browser for Windows' itemName='Navegador' url='https://arc.net' />
+                <SetupCard theme={theme} src='chrome' itemType='Google Chrome' itemName='Navegador' url='https://www.google.com/intl/pt-BR/chrome' />
+                <SetupCard theme={theme} roundImg src='helium' itemType='Helium' itemName='Navegador' url='https://helium.computer' />
+                <SetupCard theme={theme} src='notion' itemType='Notion' itemName='Anotações' url='https://notion.com' />
+                <SetupCard theme={theme} src='spotify' itemType='Spotify' itemName='Música' url='https://spotify.com' />
+                <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud' url='https://drive.google.com' />
+                <SetupCard theme={theme} src='github' itemType='GitHub' itemName='Controle de Versão' url='https://github.com' />
               </>
             )}
           </div>
         </div>
         <div className='pt-20' id='books-section'>
           <h3 className='mb-3 text-2xl'>Books</h3>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6 tooltip-container'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6 tooltip-container'>
             {loading ? (
               <>
                 <SetupCardSkeleton theme={theme} />
@@ -121,7 +121,7 @@ export function Setup({ theme }: { theme: string }) {
         </div>
         <div className='pt-20' id='newsletter-section'>
           <h3 className='mb-3 text-2xl'>Newsletter</h3>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-6'>
             {loading ? (
               <>
                 <SetupCardSkeleton theme={theme} />
