@@ -31,7 +31,7 @@ export function SetupCard(props: SetupCardProps) {
       }}
       onClick={handleCardClick}
     >
-      <img className={`img-contain p-1 h-36 object-contain ${(invertOnLightTheme.includes(props.src) && props.theme === 'light') || (invertOnDarkTheme.includes(props.src) && props.theme === 'dark') ? 'invert' : ''} ${props.roundImg ? 'rounded-xl' : ''}`} src={imagePath} alt={`${props.itemType} image`} />
+      <img className={`img-contain p-1 h-28 md:h-36 object-contain ${(invertOnLightTheme.includes(props.src) && props.theme === 'light') || (invertOnDarkTheme.includes(props.src) && props.theme === 'dark') ? 'invert' : ''} ${props.roundImg ? 'rounded-xl' : ''}`} src={imagePath} alt={`${props.itemType} image`} />
       <div className='p-0.5 w-full'>
         <h4 className={`text-lg font-semibold mb-2 text-left`}>{props.itemType}</h4>
         <p className={`text-sm text-left w-fit py-1 px-3 rounded-2xl ${props.theme === 'dark' ? 'text-gray-400 bg-zinc-800' : 'text-gray-600 bg-zinc-200'}`}>{props.itemName}</p>
