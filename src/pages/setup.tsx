@@ -84,14 +84,14 @@ export function Setup({ theme }: { theme: string }) {
               </>
             ) : (
               <>
-                <SetupCard theme={theme} roundImg src='brave' itemType='Brave Browser' itemName='Browser' url='https://www.amazon.com.br/gp/product/8576082675/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' />
-                <SetupCard theme={theme} roundImg src='arc' itemType='Arc Browser' itemName='Browser' url='https://www.amazon.com.br/gp/product/8550804606/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' />
-                <SetupCard theme={theme} src='chrome' itemType='Google Chrome' itemName='Browser' url='/setup' />
-                <SetupCard theme={theme} roundImg src='helium' itemType='Helium' itemName='Browser' url='/setup' />
-                <SetupCard theme={theme} src='notion' itemType='Notion' itemName='Note taking' url='/setup' />
-                <SetupCard theme={theme} src='spotify' itemType='Spotify' itemName='Music' url='https://www.amazon.com.br/dp/8595086354?ref=ppx_yo2ov_dt_b_fed_asin_title' />
-                <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud Storage' url='https://solasterion.com' />
-                <SetupCard theme={theme} src='github' itemType='GitHub' itemName='Version Control' url='https://solasterion.com' />
+                <SetupCard theme={theme} roundImg src='brave' itemType='Brave Browser' itemName='Browser' url='https://brave.com' />
+                <SetupCard theme={theme} roundImg src='arc' itemType='Arc Browser for Windows' itemName='Browser' url='https://arc.net' />
+                <SetupCard theme={theme} src='chrome' itemType='Google Chrome' itemName='Browser' url='https://www.google.com/intl/pt-BR/chrome' />
+                <SetupCard theme={theme} roundImg src='helium' itemType='Helium' itemName='Browser' url='https://helium.computer' />
+                <SetupCard theme={theme} src='notion' itemType='Notion' itemName='Note taking' url='https://notion.com' />
+                <SetupCard theme={theme} src='spotify' itemType='Spotify' itemName='Music' url='https://spotify.com' />
+                <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud Storage' url='https://drive.google.com' />
+                <SetupCard theme={theme} src='github' itemType='GitHub' itemName='Version Control' url='https://github.com' />
               </>
             )}
           </div>
