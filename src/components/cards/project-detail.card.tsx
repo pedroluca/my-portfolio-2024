@@ -6,6 +6,7 @@ export type ProjectDetailCardProps = {
   title: string
   description: string
   imageUrl?: string
+  fullWidthImage?: boolean
   projectUrl?: string
   theme: string
 }
@@ -64,7 +65,7 @@ export function ProjectDetailCard(props: ProjectDetailCardProps) {
           <img 
             src={new URL(`../../assets/images/project-images/${props.imageUrl}`, import.meta.url).href} 
             alt={`Screenshot do projeto ${props.title}`} 
-            className='w-full h-60 lg:h-96 object-fill rounded-lg mb-6 shadow-md' 
+            className={`${props.fullWidthImage ? 'w-full h-44' : 'w-auto mx-auto h-64'} lg:h-96 object-fill rounded-lg mb-6 shadow-md`} 
           />
         )}
         

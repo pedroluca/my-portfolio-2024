@@ -16,7 +16,7 @@ export function Projects({ theme }: { theme: string }) {
     <section className='relative py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24 mb-16' id='projects-section'>
       <PageTitle>Projetos</PageTitle>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-        <ProjectCard
+        {/* <ProjectCard
           theme={theme}
           title='App TrainLog'
           description='Webapp para acompanhamento de treinos e exercícios, com temporizador de intervalos incluso e compartilhamento de treinos.' 
@@ -24,17 +24,17 @@ export function Projects({ theme }: { theme: string }) {
           imageUrl='app-trainlog.jpg'
           setIsDetailModalOpen={setIsDetailModalOpen}
           setDetailProject={setDetailProject}
-        />
+        /> */}
         <ProjectCard
           theme={theme}
-          title='Site TrainLog'
-          description='Landing page para divulgação e venda do sistema TrainLog.' 
-          url='https://trainlog.site/'
-          imageUrl='site-trainlog.jpg'
+          title='Site Tractus'
+          description='Site institucional explicativo para o aplicativo Tractus.' 
+          url='https://apptractus.com.br/'
+          imageUrl='site-tractus.png'
           setIsDetailModalOpen={setIsDetailModalOpen}
           setDetailProject={setDetailProject}
         />
-        <ProjectCard
+        {/* <ProjectCard
           theme={theme}
           title='Finances'
           description='Sistema de Gerenciamento de Faturas e Compras no Cartão de Crédito.' 
@@ -42,7 +42,7 @@ export function Projects({ theme }: { theme: string }) {
           imageUrl='finances.jpg'
           setIsDetailModalOpen={setIsDetailModalOpen}
           setDetailProject={setDetailProject}
-        />
+        /> */}
         <ProjectCard
           theme={theme}
           title='I Olimpíadas Científicas do Território Sertão Produtivo'

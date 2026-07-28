@@ -3,6 +3,7 @@ import { Projects } from './projects'
 import { Link } from 'react-scroll'
 import { ChevronDown } from 'lucide-react'
 import { ScrollToTopButton } from '../components/scroll-to-top'
+import { Apps } from './apps'
 
 export function Home({ theme }: { theme: string }) {  
   return (
@@ -18,6 +19,7 @@ export function Home({ theme }: { theme: string }) {
         </Link>
       </main>
       <About theme={theme} />
+      <Apps theme={theme} />
       <Projects theme={theme} />
       <ScrollToTopButton />
     </>
