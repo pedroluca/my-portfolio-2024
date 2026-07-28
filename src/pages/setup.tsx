@@ -40,6 +40,7 @@ export function Setup({ theme }: { theme: string }) {
                 {/* <SetupCard theme={theme} src='headset' itemType='Headset' itemName='Razer Kraken Lite' url='https://www.amazon.com.br/gp/product/B07XC936P8/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' /> */}
                 <SetupCard theme={theme} src='mouse1' itemType='App-Tech MWR560' itemName='Mouse' url='https://www.kalunga.com.br/prod/mouse-sem-fio-ergonomico-recarregavel-1600dpi-preto-mwr560-app-tech-cx-1-un/436344' />
                 <SetupCard theme={theme} src='mousepad' itemType='Eddias Deskpad Office' itemName='Mousepad' url='https://www.eddias.com.br/products/mousepad-deskpad-office?variant=44281336103229' />
+                <SetupCard theme={theme} src='smartphone2' itemType='Samsung Galaxy S25 5G' itemName='Smartphone' url='https://www.mercadolivre.com.br/samsung-galaxy-s25-5g-256gb-12gb-camera-tripla-azul-marinho/p/MLB45502223?pdp_filters=item_id:MLB4646112803' />
                 <SetupCard theme={theme} src='smartphone' itemType='Redmi Note 11 Pro' itemName='Smartphone' url='https://www.mi.com/br/product/redmi-note-11-pro/' />
                 <SetupCard theme={theme} src='smartwatch' itemType='Samsung Galaxy Fit3' itemName='Smartband' url='https://www.mercadolivre.com.br/samsung-smartwatch-galaxy-fit3-grafite/p/MLB34163245?pdp_filters=item_id:MLB3956720093' />
                 <SetupCard theme={theme} src='alexa' itemType='Alexa Echo Dot 4ª gen' itemName='Assistente' url='https://www.amazon.com.br/Echo-Dot-com-Rel%C3%B3gio-Cor-Branca/dp/B084J4WP6J' />
