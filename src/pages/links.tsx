@@ -9,13 +9,14 @@ export function Links({ theme }: { theme: string }) {
   
   const links = [
     { src: 'instagram', social: 'Instagram', user: '@pedroluca.p', url: 'https://instagram.com/pedroluca.p' },
+    { src: 'threads', social: 'Threads', user: '@pedroluca.p', url: 'https://www.threads.net/@pedroluca.p' },
     { src: 'github', social: 'Github', user: '@pedroluca', url: 'https://github.com/pedroluca' },
     { src: 'linkedin', social: 'LinkedIn', user: 'Pedro Luca Prates', url: 'https://linkedin.com/in/pedrolucaofc' },
-    { src: 'xtwitter', social: 'X (Twitter)', user: '@pedrolucaofc', url: 'https://twitter.com/pedrolucaofc' },
+    // { src: 'xtwitter', social: 'X (Twitter)', user: '@pedrolucaofc', url: 'https://twitter.com/pedrolucaofc' },
     { src: 'youtube', social: 'YouTube', user: 'Pedro Luca Prates', url: 'https://youtube.com/channel/@pedrolucaofc' },
-    { src: 'twitch', social: 'Twitch', user: 'PedroLucaOFC', url: 'https://twitch.tv/PedroLucaOFC' },
+    // { src: 'twitch', social: 'Twitch', user: 'PedroLucaOFC', url: 'https://twitch.tv/PedroLucaOFC' },
     { src: 'duolingo', social: 'Duolingo', user: 'pedroluca.p', url: 'https://www.duolingo.com/profile/pedroluca.p' },
-    { src: 'outlook', social: 'E-mail', user: 'pedrolucaofc@outlook.com', url: 'mailto:pedrolucaofc@outlook.com' },
+    { src: 'outlook', social: 'E-mail', url: 'mailto:pedrolucadev@outlook.com' },
   ]
 
   return (
