@@ -34,21 +34,21 @@ export function Projects({ theme }: { theme: string }) {
           setIsDetailModalOpen={setIsDetailModalOpen}
           setDetailProject={setDetailProject}
         />
-        {/* <ProjectCard
-          theme={theme}
-          title='Finances'
-          description='Sistema de Gerenciamento de Faturas e Compras no Cartão de Crédito.' 
-          url='https://finances.pedroluca.dev.br/'
-          imageUrl='finances.jpg'
-          setIsDetailModalOpen={setIsDetailModalOpen}
-          setDetailProject={setDetailProject}
-        /> */}
         <ProjectCard
           theme={theme}
           title='I Olimpíadas Científicas do Território Sertão Produtivo'
           description='Site para divulgação de datas, inscrições, e contato dos participantes das I Olimpíadas Científicas do Território Sertão Produtivo.' 
           url='https://olimpiadas-cientificas.vercel.app/'
           imageUrl='olimpiadas.jpg'
+          setIsDetailModalOpen={setIsDetailModalOpen}
+          setDetailProject={setDetailProject}
+        />
+        <ProjectCard
+          theme={theme}
+          title='Presenzo Convites'
+          description='Sistema de Gestão e Convite de convidados para eventos, com confirmação online e lista de sugestão de presentes.' 
+          url='https://presenzo.com.br/'
+          imageUrl='presenzo-app.png'
           setIsDetailModalOpen={setIsDetailModalOpen}
           setDetailProject={setDetailProject}
         />

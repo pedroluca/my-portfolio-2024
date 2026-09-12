@@ -4,6 +4,7 @@ import { ProjectDetailCard, ProjectDetailCardProps } from '@/components/cards/pr
 import { AppCard } from '@/components/cards/app-card'
 import TractusApp from '@/assets/images/project-images/tractus-app.png'
 import FinancesApp from '@/assets/images/project-images/finances-app.png'
+import PresenzoApp from '@/assets/images/project-images/presenzo-app.png'
 
 export function Apps({ theme }: { theme: string }) {
   const [isDetailModalOpen, setIsDetailModalOpen] = useState(false)
@@ -16,7 +17,7 @@ export function Apps({ theme }: { theme: string }) {
   return (
     <section className='relative py-4 px-6 lg:px-[25%] w-full flex flex-col gap-3 text-justify pt-24 mb-16' id='projects-section'>
       <PageTitle>Aplicativos</PageTitle>
-      <div className='grid grid-cols-2 gap-6'>
+      <div className='grid grid-cols-2 md:grid-cols-3 gap-6'>
         <AppCard
           theme={theme}
           title='Tractus'
@@ -34,6 +35,16 @@ export function Apps({ theme }: { theme: string }) {
           url='https://finances.pedroluca.dev.br/'
           logoUrl={FinancesApp}
           imageUrl='app-finances.png'
+          setIsDetailModalOpen={setIsDetailModalOpen}
+          setDetailProject={setDetailProject}
+        />
+        <AppCard
+          theme={theme}
+          title='Presenzo'
+          description='Site de Gestão e Convite de convidados para eventos.' 
+          url='https://presenzo.com.br/'
+          logoUrl={PresenzoApp}
+          imageUrl='site-presenzo.png'
           setIsDetailModalOpen={setIsDetailModalOpen}
           setDetailProject={setDetailProject}
         />
