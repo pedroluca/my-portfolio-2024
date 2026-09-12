@@ -10,9 +10,9 @@ export function Links({ theme }: { theme: string }) {
   const links = [
     { src: 'instagram', social: 'Instagram', user: '@pedroluca.p', url: 'https://instagram.com/pedroluca.p' },
     { src: 'threads', social: 'Threads', user: '@pedroluca.p', url: 'https://www.threads.net/@pedroluca.p' },
-    { src: 'tractus', social: 'Tractus', user: '@pedroluca.p', url: 'https://apptractus.com.br/' },
-    { src: 'finances', social: 'Finances', user: '@pedroluca.p', url: 'https://finances.pedroluca.dev.br/' },
-    { src: 'presenzo', social: 'Presenzo', user: '@pedroluca.p', url: 'https://presenzo.com.br/' },
+    { src: 'tractus', social: 'Tractus', user: '@pedroluca', url: 'https://apptractus.com.br/' },
+    { src: 'finances', social: 'Finances', user: '@pedroluca', url: 'https://finances.pedroluca.dev.br/' },
+    { src: 'presenzo', social: 'Presenzo', user: '@pedroluca', url: 'https://presenzo.com.br/' },
     { src: 'github', social: 'Github', user: '@pedroluca', url: 'https://github.com/pedroluca' },
     { src: 'linkedin', social: 'LinkedIn', user: 'Pedro Luca Prates', url: 'https://linkedin.com/in/pedrolucaofc' },
     // { src: 'xtwitter', social: 'X (Twitter)', user: '@pedrolucaofc', url: 'https://twitter.com/pedrolucaofc' },
