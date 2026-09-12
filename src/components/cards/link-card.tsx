@@ -2,6 +2,9 @@ import type { SimpleIcon } from 'simple-icons'
 import { siInstagram, siGithub, siX, siYoutube, siTwitch, siDuolingo, siThreads } from 'simple-icons'
 import { Mail, Linkedin } from 'lucide-react'
 import { BrandIcon } from '../brand-icon/brand-icon'
+import TractusLogo from '@/assets/images/project-images/tractus-app.png'
+import FinancesLogo from '@/assets/images/project-images/finances-app.png'
+import PresenzoLogo from '@/assets/images/project-images/presenzo-app.png'
 
 interface LinkCardProps {
   src: string
@@ -21,6 +24,12 @@ const BRAND_ICONS: Record<string, SimpleIcon> = {
   threads: siThreads,
 }
 
+const APP_ICONS: Record<string, string> = {
+  tractus: TractusLogo,
+  finances: FinancesLogo,
+  presenzo: PresenzoLogo,
+}
+
 // GitHub and Threads marks are near-black, so they'd vanish on the dark theme's card background
 const THEME_ADAPTIVE_ICONS = new Set(['github', 'threads'])
 
@@ -29,6 +38,9 @@ function SocialIcon({ src, className }: { src: string, className: string }) {
 
   if (src === 'outlook') return <Mail className={shrinkableClassName} color='#5e95eb' />
   if (src === 'linkedin') return <Linkedin className={shrinkableClassName} color='#0a66c2' />
+
+  const appLogo = APP_ICONS[src]
+  if (appLogo) return <img src={appLogo} alt={src} className={`${shrinkableClassName} rounded-xl object-cover`} />
 
   const icon = BRAND_ICONS[src]
   if (!icon) return null
