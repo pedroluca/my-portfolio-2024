@@ -41,7 +41,7 @@ export function Setup({ theme }: { theme: string }) {
                 <SetupCard theme={theme} src='mouse1' itemType='App-Tech MWR560' itemName='Mouse' url='https://www.kalunga.com.br/prod/mouse-sem-fio-ergonomico-recarregavel-1600dpi-preto-mwr560-app-tech-cx-1-un/436344' />
                 <SetupCard theme={theme} src='mousepad' itemType='Eddias Deskpad Office' itemName='Mousepad' url='https://www.eddias.com.br/products/mousepad-deskpad-office?variant=44281336103229' />
                 <SetupCard theme={theme} src='smartphone2' itemType='Samsung Galaxy S25 5G' itemName='Smartphone' url='https://www.mercadolivre.com.br/samsung-galaxy-s25-5g-256gb-12gb-camera-tripla-azul-marinho/p/MLB45502223?pdp_filters=item_id:MLB4646112803' />
-                <SetupCard theme={theme} src='smartphone' itemType='Redmi Note 11 Pro' itemName='Smartphone' url='https://www.mi.com/br/product/redmi-note-11-pro/' />
+                {/* <SetupCard theme={theme} src='smartphone' itemType='Redmi Note 11 Pro' itemName='Smartphone' url='https://www.mi.com/br/product/redmi-note-11-pro/' /> */}
                 <SetupCard theme={theme} src='smartwatch' itemType='Samsung Galaxy Fit3' itemName='Smartband' url='https://www.mercadolivre.com.br/samsung-smartwatch-galaxy-fit3-grafite/p/MLB34163245?pdp_filters=item_id:MLB3956720093' />
                 <SetupCard theme={theme} src='alexa' itemType='Alexa Echo Dot 4ª gen' itemName='Assistente' url='https://www.amazon.com.br/Echo-Dot-com-Rel%C3%B3gio-Cor-Branca/dp/B084J4WP6J' />
                 <SetupCard theme={theme} src='hub' itemType='Hub USB-C -> USB-A' itemName='Acessório' url='https://pt.aliexpress.com/item/1005005445851704.html?spm=a2g0o.order_list.order_list_main.30.21efcaa40xX5Os&gatewayAdapt=glo2bra' />
@@ -62,10 +62,10 @@ export function Setup({ theme }: { theme: string }) {
               </>
             ) : (
               <>
-                <SetupCard theme={theme} src='antigravity' itemType='Antigravity' itemName='IDE' url='https://antigravity.google/' />
+                {/* <SetupCard theme={theme} src='antigravity' itemType='Antigravity' itemName='IDE' url='https://antigravity.google/' /> */}
                 <SetupCard theme={theme} src='vscode' itemType='VS Code' itemName='IDE' url='https://code.visualstudio.com/' />
                 <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper++' itemName='Tema' url='https://marketplace.visualstudio.com/items?itemName=Obstinate.vesper-pp' />
-                <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper Extended Cursor' itemName='Tema' url='https://open-vsx.org/extension/oreofreakshake/vesper-extended-cursor' />
+                {/* <SetupCard theme={theme} roundImg src='vesperpptheme' itemType='Vesper Extended Cursor' itemName='Tema' url='https://open-vsx.org/extension/oreofreakshake/vesper-extended-cursor' /> */}
                 <SetupCard theme={theme} src='jetbrains' itemType='JetBrains Mono' itemName='Fonte' url='https://www.jetbrains.com/pt-br/lp/mono/' />
                 <SetupCard theme={theme} src='hyper' itemType='Hyper' itemName='Terminal' url='https://hyper.is/' />
                 <SetupCard theme={theme} src='gitbash' itemType='Git Bash for Windows' itemName='Shell' url='https://git-scm.com/' />
@@ -88,10 +88,9 @@ export function Setup({ theme }: { theme: string }) {
                 <SetupCard theme={theme} roundImg src='brave' itemType='Brave Browser' itemName='Navegador' url='https://brave.com' />
                 <SetupCard theme={theme} roundImg src='arc' itemType='Arc Browser for Windows' itemName='Navegador' url='https://arc.net' />
                 <SetupCard theme={theme} src='chrome' itemType='Google Chrome' itemName='Navegador' url='https://www.google.com/intl/pt-BR/chrome' />
-                <SetupCard theme={theme} roundImg src='helium' itemType='Helium' itemName='Navegador' url='https://helium.computer' />
                 <SetupCard theme={theme} src='notion' itemType='Notion' itemName='Anotações' url='https://notion.com' />
                 <SetupCard theme={theme} src='spotify' itemType='Spotify' itemName='Música' url='https://spotify.com' />
-                <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud' url='https://drive.google.com' />
+                {/* <SetupCard theme={theme} src='googleDrive' itemType='Google Drive' itemName='Cloud' url='https://drive.google.com' /> */}
                 <SetupCard theme={theme} src='github' itemType='GitHub' itemName='Controle de Versão' url='https://github.com' />
               </>
             )}
@@ -111,11 +110,11 @@ export function Setup({ theme }: { theme: string }) {
               <>
                 <SetupCard theme={theme} src='codigo' itemType='Código Limpo' itemName='Livro' url='https://www.amazon.com.br/gp/product/8576082675/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' />
                 <SetupCard theme={theme} src='arquitetura' itemType='Arquitetura Limpa' itemName='Livro' url='https://www.amazon.com.br/gp/product/8550804606/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1' />
-                <SetupCard theme={theme} src='php4' itemType='PHP4 e MySQL' itemName='Livro' url='/setup' />
-                <SetupCard theme={theme} src='estrutura' itemType='Estrutura de Dados' itemName='Livro' url='/setup' />
+                <SetupCard theme={theme} src='essencialismo' itemType='Essencialismo' itemName='Livro' url='https://www.amazon.com.br/Essencialismo-Greg-Mckeown/dp/8543102146' />
+                {/* <SetupCard theme={theme} src='estrutura' itemType='Estrutura de Dados' itemName='Livro' url='/setup' />
                 <SetupCard theme={theme} src='android' itemType='Aplicativos para o Android' itemName='Livro' url='/setup' />
                 <SetupCard theme={theme} src='lotrBox' itemType='O Senhor dos Anéis' itemName='Box de livros' url='https://www.amazon.com.br/dp/8595086354?ref=ppx_yo2ov_dt_b_fed_asin_title' />
-                <SetupCard theme={theme} src='solasterion' itemType='Solasterion' itemName='Livro' url='https://solasterion.com' />
+                <SetupCard theme={theme} src='solasterion' itemType='Solasterion' itemName='Livro' url='https://solasterion.com' /> */}
               </>
             )}
           </div>

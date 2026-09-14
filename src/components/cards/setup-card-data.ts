@@ -46,6 +46,7 @@ import Spotify from '@/images/setup-images/spotify.webp'
 import GoogleDrive from '@/images/setup-images/google-drive.webp'
 import GitHub from '@/images/setup-images/github.webp'
 import Smartphone2 from '@/images/setup-images/smartphone2.webp'
+import Essencialismo from '@/images/setup-images/essencialismo.webp'
 
 export type ImageMapKeys =
   | 'laptop' | 'mouse1' | 'mouse2' | 'earpods' | 'headphone' | 'headset'
@@ -55,7 +56,7 @@ export type ImageMapKeys =
   | 'designdev' | 'smartphone' | 'smartwatch' | 'alexa' | 'hub' | 'suportecabos'
   | 'lotrBox' | 'monitor' | 'monitor2' | 'solasterion' | 'moleskine' | 'abajur'
   | 'pinho' | 'antigravity' | 'brave' | 'arc' | 'chrome' | 'helium' | 'notion'
-  | 'spotify' | 'googleDrive' | 'github' | 'smartphone2'
+  | 'spotify' | 'googleDrive' | 'github' | 'smartphone2' | 'essencialismo'
 
 export const invertOnLightTheme: ImageMapKeys[] = [
   'jetbrains',
@@ -116,4 +117,5 @@ export const imageMap: Record<ImageMapKeys, string> = {
   googleDrive: GoogleDrive,
   github: GitHub,
   smartphone2: Smartphone2,
+  essencialismo: Essencialismo,
 }
